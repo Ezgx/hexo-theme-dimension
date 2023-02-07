@@ -1,0 +1,42 @@
+//default color:
+:root
+  --hr-line-color: #e91417
+
+[data-theme="dark"]
+  --hr-line-color: #4db7d5
+//水平线样式更改
+hr
+  position: relative
+  margin: 40px auto
+  display: block
+  height: 20px
+  width: 100%
+  background: transparent
+  border: none
+  &:hover
+    &::before
+      clip-path: polygon(0 0, 60px 100%, calc(100% - 30px) 100%, 100% 50%, calc(100% - 15px) 50%, calc(100% - 35px) calc(100% - 5px), 65px calc(100% - 5px), 15px 0)
+      transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17)
+    &::after
+      clip-path: polygon(0 50%,35px 0,calc(100% - 60px) 0,100% 100%,calc(100% - 15px) 100%,calc(100% - 65px) 5px,35px  5px,15px 50%)
+      transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17)
+  &::before
+    display: block
+    content: ""
+    height: 20px
+    width: calc(50% + 60px)
+    left: 0px
+    position: absolute
+    background: linear-gradient(to left, var(--hr-line-color),transparent)
+    clip-path: polygon(0 100%, 60px 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 15px) 50%, calc(100% - 35px) 5px, 65px 5px, 15px 100%)
+    transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17)
+  &::after
+    display: block
+    content: ""
+    height: 20px
+    width: calc(50% + 60px)
+    right: 0px
+    position: absolute
+    background: linear-gradient(to right, var(--hr-line-color),transparent)
+    clip-path: polygon(0 50%,35px 100%,calc(100% - 60px) 100%,100% 0,calc(100% - 15px) 0,calc(100% - 65px) calc(100% - 5px),35px  calc(100% - 5px),15px 50%)
+    transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17)
