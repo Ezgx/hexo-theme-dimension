@@ -63,6 +63,11 @@
   color: var(--title-color);
   text-shadow: 0 0 3px var(--title-shadow-color);
 }
+#post-info .post-title {
+  color: var(--title-color) !important;
+  text-shadow: 0px 0px 10px var(--title-shadow-color);
+  user-select: none;  
+}
 :root {
   --title-color: #c0dcff;
   --title-shadow-color: blue;
