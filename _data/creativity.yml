@@ -18,9 +18,6 @@
     - name: Webpack
       color: "#2e3a41"
       icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ff27e5c9b.png
-    - name: Pinia
-      color: "#fff"
-      icon: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/pinia-logo.svg
     - name: Python
       color: "#fff"
       icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/63300647dea51.png

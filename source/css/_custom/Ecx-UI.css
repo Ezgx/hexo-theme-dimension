@@ -1,15 +1,12 @@
 /* Exc-UI */
 
-/* 顶栏悬浮 */
+/* 导航栏 */
 #nav {
     top: 0px !important;
     /* width: 80%;
     margin-left: 10vw !important; */
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 0px 0px 1px #ababab;
-}
-#page-header.nav-fixed #nav #site-name:hover, #page-header.nav-fixed #nav #toggle-menu:hover, #page-header.nav-fixed #nav a:hover {
-  box-shadow: 0px 0px 0px 1px rgb(71, 71, 255) !important;
 }
 #nav {
   padding: 0px;
@@ -19,27 +16,15 @@
 #page-header.nav-fixed #nav {
     top: -57px !important;
 }
-#nav {
-  padding-left: 32px !important;
-  padding-right: 32px !important;
-}
-/* 顶栏颜色 */
 #page-header.nav-fixed #nav {
-  background: #ffffff !important;
+  background: #ffffff7a !important;
   box-shadow: 0px 0px 0px 1px #ababab;
   border-radius: 0px 0px 20px 20px !important;
 }
 #nav.show {
-  background: #ffffffbd !important;
+  background: #ffffff7a !important;
   border-radius: 0px 0px 20px 20px !important;
   box-shadow: 0px 0px 0px 1px #ababab;
-}
-/* hover填色 */
-.page #nav a:hover {
-  background-color: rgb(66,90,239);
-}
-#nav *::after{
-  background-color: transparent!important;
 }
 .navavatar {
   margin-bottom: -12.5px;
@@ -56,21 +41,21 @@
 /* 标题效果 */
 #page-header #site-title {
   color: var(--title-color) !important;
-  text-shadow: 0px 0px 10px var(--title-shadow-color);
+  text-shadow: 0px 0px 5px var(--title-shadow-color);
   user-select: none;
 }
 #page-header #site-subtitle {
   color: var(--title-color);
-  text-shadow: 0 0 3px var(--title-shadow-color);
+  text-shadow: 0 0 5px var(--title-shadow-color);
 }
 #post-info .post-title {
   color: var(--title-color) !important;
-  text-shadow: 0px 0px 10px var(--title-shadow-color);
+  text-shadow: 0px 0px 5px var(--title-shadow-color);
   user-select: none;  
 }
 :root {
-  --title-color: #c0dcff;
-  --title-shadow-color: blue;
+  --title-color: #000000;
+  --title-shadow-color: rgb(255, 255, 255);
 }
 
 /* 页脚悬浮 */
@@ -107,13 +92,6 @@ footer {
   box-shadow: 0px 0px 10px 5px rgb(255 166 0) !important;
   border-radius: 8px;
 }
-
-/* 六边形头像 */
-.avatar-img {
-  border-radius: 10px 10px 10px 10px !important; /* 方形圆角 */
-  border-radius: 0px 0px 0px 1px #fff;
-}
-
 #aside-content>.card-info {
   background: #fff url(https://img02.anzhiy.cn/adminuploads/1/2022/10/26/6358a07bf21fc.webp) top -24% center no-repeat !important;
   position: relative;
@@ -131,78 +109,49 @@ footer {
 }
 /* markdown美化 */
 #article-container code {
-    padding: 2px 4px;
-    border-radius: 6px;
-    background: #4259ef;
-    color: #fff;
-  }
-  
-  #article-container a {
-    text-decoration: none;
-    border-bottom: 2px solid #4259ef;
-    color: #363636;
-    font-weight: bold;
-    padding: 0 4px;
-    border-radius: 4px 4px 0 0;
-  }
-  
-  #article-container a:not(.fancybox):hover {
-    text-decoration: none;
-    border-bottom: 2px solid #00000000;
-    color: #fff;
-    background: #4259ef;
-    border-radius: 4px;
-    box-shadow: 0 8px 12px -3px #425aef23;
-  }
-  
-  #article-container a.fancybox {
-    border-bottom: 0;
-    padding: 0;
-    margin: auto;
-    display: contents;
-    width: fit-content;
-  }
-  
-#article-container code {
-    padding: 2px 4px;
-    border-radius: 6px;
-    background: #4259ef;
-    color: #fff;
-  }
-  
-  #article-container a {
-    text-decoration: none;
-    border-bottom: 2px solid #4259ef;
-    color: #363636;
-    font-weight: bold;
-    padding: 0 4px;
-    border-radius: 4px 4px 0 0;
-  }
-  
-  #article-container a:not(.fancybox):hover {
-    text-decoration: none;
-    border-bottom: 2px solid #00000000;
-    color: #fff;
-    background: #4259ef;
-    border-radius: 4px;
-    box-shadow: 0 8px 12px -3px #425aef23;
-  }
-  
-  #article-container a.fancybox {
-    border-bottom: 0;
-    padding: 0;
-    margin: auto;
-    display: contents;
-    width: fit-content;
-  }
-  
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin: 0px 4px;
+  background: #ff7c7c;
+  line-height: 2;
+  box-shadow: 0 8px 16px -4px #2c2d300c;;
+}
+#article-container a:not([data-fancybox=gallery]):not(.btn-beautify):not(.link-card):not(.headerlink):not(.pimgbox):not(.imgbox):not(.box):not(.cf-friends-link):not(.tag-Link):not(.pblink) {
+  text-decoration: none;
+  border-bottom: 2px solid #ff7c7c;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+  padding: 0 0.2em;
+  font-weight: 500;
+}
+#article-container a:not([data-fancybox=gallery]):not(.btn-beautify):not(.link-card):not(.headerlink):not(.pimgbox):not(.imgbox):not(.box):not(.cf-friends-link):not(.pblink):hover {
+  text-decoration: none;
+  border-bottom: 2px solid var(--heo-none);
+  color: #ffffff;
+  background: #ff7c7c;
+  border-radius: 0.25em;
+  -webkit-box-shadow: 0 8px 12px -3px rgba(66,89,239,0.137);
+  box-shadow: 0 8px 12px -3px rgba(66,89,239,0.137);
+}
 /*文章块阴影 */
+.hometoptext {
+  background: #ffffffbd;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 0px 1px #ababab;
+  text-align: center;
+  width: -webkit-fill-available;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
 #recent-posts > .recent-post-item {
   background: #ffffffbd;
+  backdrop-filter: blur(10px);
   box-shadow: 0px 0px 0px 1px #ababab;
 }
 #recent-posts > .recent-post-item:hover {
-  background: #ffffffbd;
+  background: #ffffff99;
   box-shadow: 0px 0px 0px 1px rgb(66,90,239);
 }
 #aside-content .card-widget:hover, #recent-posts>.recent-post-item:hover, .cardHover:hover, .layout>.recent-posts .pagination>:not(.space):hover, .layout>div:first-child:not(.recent-posts):hover {
@@ -282,9 +231,16 @@ footer {
 /* 打赏板块美化 */
 .post-reward .reward-button {
     background: var(--btn-bg);
-    color: black !important;
-    background: cyan;
+    height: 100px;
+    width: 400px;
+    font-size: 50px;
+    background: linear-gradient(25deg, #5091e7, #72abae, #75c572, #62e00c);
     border-radius: 20px 20px 20px 20px !important;
+}
+
+.post-reward .reward-main .reward-all .reward-item img {
+  width: 650px;
+  height: 650px;
 }
 
 /* 上一篇下一篇文章部分美化 */
@@ -411,35 +367,6 @@ img {
     clip-path: polygon(50% 0%, 50% 0%, 100% 25%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-/* 代码块美化 */
-#article-container figure.highlight {
-  background-image: linear-gradient(25deg, #2ebd6e, #6fc799, #9ccfc4, #c4d6f0) !important;
-  padding: 10px;
-}
-#article-container .code-expand-btn {
-  position: absolute;
-  bottom: 0;
-  z-index: 10;
-  color: black;
-  width: 100%;
-  /* background-image: linear-gradient(25deg, #f7242b, #fd6348, #ff8d66, #ffb385) !important; */
-  background: #ffffffoo;
-  text-align: center;
-  font-size: #ffffff00;
-}
-#article-container .highlight-tools {
-  background: #1c1c1c00;
-}
-#article-container figure.highlight .highlight-tools:after {
-  background: #fc625d00;
-  -webkit-box-shadow: 20px 0 #fdbb4000, 40px 0 #35cd4b;
-  box-shadow: 20px 0 #fdbc4000, 40px 0 #35cd4b;
-}
-#article-container .highlight-tools .copy-button {
-  color: #000000;
-  position: unset;
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),default;
-}
 
 /* 波浪css */
 .main-hero-waves-area {
@@ -567,20 +494,22 @@ img {
 #category-bar {
   padding: 0.4rem 1rem 0.4rem 0.5rem;
   background: #ffffffbd;
-  box-shadow: 0px -1px 0px 1px #ababab;
-  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  right: 20px;
+  box-shadow: 0px 0px 0px 1px #ababab;
+  border-radius: 15px 15px 15px 15px;
   display: flex;
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 0;
 }
 #category-bar:hover {
-  box-shadow: 0px -1px 0px 1px rgb(66,90,239);
+  box-shadow: 0px 0px 0px 1px rgb(66,90,239);
 }
 
 @media screen and (max-width: 768px){
   #category-bar{
-    border-radius: 0;
+    right: 0;
   }
 }
 
@@ -596,6 +525,11 @@ img {
 .category-in-bar{
   display: flex;
   white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .category-in-bar {
+    overflow: hidden;
+  }
 }
 
 .category-in-bar-tips{
@@ -639,8 +573,8 @@ img {
 #links-bar{
   padding: 0.4rem 1rem 0.4rem 0.5rem;
   background: #ffffffbd;
-  box-shadow: 0px 1px 0px 1px #ababab;
-  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 0px 0px 1px #ababab;
+  border-radius: 15px 15px 15px 15px;
   display: flex;
   white-space: nowrap;
   overflow: hidden;
@@ -649,14 +583,9 @@ img {
   border: var(--style-border);
 }
 #links-bar:hover {
-  box-shadow: 0px 1px 0px 1px rgb(66,90,239);
+  box-shadow: 0px 0px 0px 1px rgb(66,90,239);
 }
 
-@media screen and (max-width: 768px){
-  #links-bar{
-    border-radius: 0;
-  }
-}
 
 #links #links-bar{
   padding: 0;
@@ -714,7 +643,7 @@ img {
   max-width: 1220px;
   margin: auto;
   margin-top: .5rem;
-  padding: 0 1.5rem;
+  padding-bottom: 25px;
   width: 100%
 }
 
@@ -746,7 +675,7 @@ img {
 }
 
 .recent-post-top .recent-post-item {
-  display: flex;
+  display: inline-block;
   width: 200px;
   flex-direction: column;
   align-items: flex-start;
@@ -774,35 +703,14 @@ img {
       margin-right: 1rem
   }
 }
-
-@media screen and (min-width: 1300px) {
-  .recent-post-top .recent-post-item {
-      margin-right:0;
-      margin-bottom: .5rem
-  }
-
-  .recent-post-top .recent-post-item:active {
-      transform: scale(.97)
-  }
-
-  .recent-post-top {
-      overflow-x: visible
-  }
-
-  .recent-top-post-group {
-      overflow: visible;
-      overflow-x: visible
-  }
-}
-
 span.recent-post-top-text {
   position: absolute;
   top: 0;
   left: -40px;
   display: flex;
   z-index: 1;
-  background: var(--bywind-theme);
-  color: var(--bywind-white);
+  background: rgb(51, 236, 14);
+  color: black;
   padding: 2px 8px;
   font-size: .6rem;
   border-radius: 12px 0 12px 0;
@@ -814,17 +722,6 @@ span.recent-post-top-text {
   left: 0
 }
 
-@media screen and (min-width: 1300px) {
-  .recent-post-top .recent-post-item:hover {
-      border:var(--style-border-hover);
-      box-shadow: var(--bywind-shadow-main);
-      transform: scale(1.03)
-  }
-
-  .recent-post-top .recent-post-item:active {
-      transform: scale(.97)
-  }
-}
 
 @media screen and (max-width: 768px) {
   .recent-top-post-group {
@@ -849,7 +746,7 @@ span.recent-post-top-text {
 
 .recent-post-top .recent-post-item .post_cover img {
   object-fit: cover;
-  width: 100%;
+  width: 200px;
   background: var(--bywind-secondbg);
   border-radius: 12px 12px 0 0
 }
@@ -883,9 +780,10 @@ span.recent-post-top-text {
   justify-content: center;
   align-items: flex-end;
   align-content: center;
+  color: black;
   padding-top: .5rem;
   font-weight: 700;
-  font-size: .8rem!important;
+  font-size: 1.1rem!important;
   padding: 0!important
 }
 
@@ -918,11 +816,6 @@ a.categoryButton i {
 transform: scale(1.0) rotate(15deg);
 }
 
-@media screen and (min-width: 1300px) {
-a.categoryButton:active {
-  transform: scale(0.97);
-}
-}
 
 @media screen and (max-width: 768px) {
 a.categoryButton {
@@ -990,26 +883,6 @@ div#banners {
 display: none;
 }
 
-@media screen and (min-width: 1300px) {
-.topGroup {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  height: calc(328px + 0.5rem);
-  align-content: space-between;
-  width: calc(600px + 1.5rem);
-  position: relative;
-}
-
-div#bannerGroup {
-  width: calc(100% - 600px - 2rem);
-  margin-right: 0.5rem;
-  height: calc(328px + 0.5rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 div#banners {
   display: flex;
@@ -1208,12 +1081,6 @@ div#banners:hover {
   filter: blur(0)
 }
 
-@media screen and (min-width: 1300px) {
-  .categoryItem:hover i {
-      transform:scale(1.03) rotate(0)
-  }
-}
-
 .cate-button-text {
   box-shadow: var(--bywind-shadow-black)
 }
@@ -1227,31 +1094,6 @@ div#banners:hover {
 
 .categoryGroup .categoryItem:nth-child(3) {
   display: none
-}
-
-@media screen and (min-width: 1300px) {
-  .recent-post-top .categoryGroup {
-      flex-direction:row;
-      height: 24%
-  }
-
-  .categoryItem {
-      width: calc(100% / 3 - .33rem);
-      height: 100%;
-      margin-right: .5rem
-  }
-
-  .categoryItem:last-child {
-      margin-right: 0
-  }
-
-  .categoryItem:hover {
-      width: 50%
-  }
-
-  .categoryGroup .categoryItem:nth-child(3) {
-      display: flex
-  }
 }
 
 a.categoryButton.bikan {
@@ -1299,4 +1141,272 @@ a.categoryButton:hover {
 
 #page-header #post-top-cover {
   filter: blur(10px);
+}
+
+/* 自定义twikoo评论输入框高度 */
+.tk-input[data-v-619b4c52] .el-textarea__inner {
+  height: 230px !important;
+}
+/* 输入评论时自动隐藏输入框背景图片 */
+.tk-input[data-v-619b4c52] .el-textarea__inner:focus {
+  background-image: none !important;
+}
+/* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
+.tk-replies {
+  left: -70px;
+  width: calc(100% + 70px);
+}
+/* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
+.tk-replies .tk-avatar {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+.tk-replies .tk-avatar img {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+/* 回复框左移，避免窄屏时出框 */
+.tk-comments-container .tk-submit {
+  position: relative;
+  left: -70px;
+}
+/* 评论块气泡化修改 */
+.tk-content {
+  background: #00a6ff; /*默认模式访客气泡配色*/
+  padding: 10px;
+  color: #fff; /*默认模式访客气泡字体配色*/
+  border-radius: 10px;
+  font-size: 16px !important;
+  width: fit-content;
+  max-width: 100%;
+  position: relative !important;
+  overflow: visible !important;
+  max-height: none !important;
+}
+/* 修复图片出框 */
+.tk-content img {
+  max-width: 100% !important;
+}
+/* 修复过长文本出框 */
+.tk-content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.tk-content a {
+  color: #eeecaa; /*默认模式超链接配色*/
+}
+.tk-content::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  border-top: 2px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #00a6ff; /*默认模式访客气泡小三角配色*/
+  border-left: 0px solid transparent;
+}
+.tk-master .tk-content {
+  background: #ff8080; /*默认模式博主气泡配色*/
+  color: #fff; /*默认模式博主气泡字体配色*/
+  width: fit-content;
+  max-width: 100%;
+}
+.tk-master .tk-content a {
+  color: #eeecaa;
+}
+.tk-master .tk-content::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  border-top: 2px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #ff8080; /*默认模式博主气泡小三角配色*/
+  border-left: 0px solid transparent;
+}
+.tk-row[data-v-d82ce9a0] {
+  max-width: 100%;
+  width: fit-content;
+}
+.tk-avatar {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* 夜间模式配色，具体比照上方默认模式class */
+[data-theme="dark"] .tk-content {
+  background: #000;
+  color: #fff;
+}
+[data-theme="dark"] .tk-content a {
+  color: #dfa036;
+}
+[data-theme="dark"] .tk-content::before {
+  border-right: 15px solid #000;
+}
+[data-theme="dark"] .tk-master .tk-content {
+  background: #000;
+  color: #fff;
+}
+[data-theme="dark"] .tk-master .tk-content a {
+  color: #dfa036;
+}
+[data-theme="dark"] .tk-master .tk-content::before {
+  border-top: 2px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #000;
+  border-left: 0px solid transparent;
+}
+/* 自适应内容 */
+@media screen and (min-width: 1024px) {
+  /* 设置宽度上限，避免挤压博主头像 */
+  .tk-content {
+    max-width: 75%;
+    width: fit-content;
+  }
+  .tk-master .tk-content {
+    width: 75%;
+  }
+  .tk-master .tk-content::before {
+    left: 100%;
+    border-left: 15px solid #ff8080;
+    border-right: 0px solid transparent;
+  }
+  .tk-master .tk-avatar {
+    position: relative;
+    left: calc(75% + 70px);
+  }
+  .tk-master .tk-row[data-v-d82ce9a0] {
+    position: relative;
+    top: 0px;
+    left: calc(75% - 230px);
+  }
+  [data-theme="dark"] .tk-master .tk-content::before {
+    border-left: 15px solid #000;
+    border-right: 0px solid transparent;
+  }
+}
+/* 设备名称常态隐藏，悬停评论时显示 */
+.tk-extras {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.tk-content:hover + .tk-extras {
+  -webkit-animation: tk-extras-fadeIn 0.5s linear;
+  -moz-animation: tk-extras-fadeIn 0.5s linear;
+  -o-animation: tk-extras-fadeIn 0.5s linear;
+  -ms-animation: tk-extras-fadeIn 0.5s linear;
+  animation: tk-extras-fadeIn 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-moz-keyframes tk-extras-fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes tk-extras-fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes tk-extras-fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes tk-extras-fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+
+/* 设置文字内容 :qq显示的作用是选择第几个 */
+.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
+  content: '输入QQ号会自动获取昵称和头像🐧'
+}
+.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {
+  content: '博主暂时未设置邮箱通知功能，请留意评论的文章书否被回复。谢谢！'
+}
+.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {
+  content: '可以通过昵称访问您的网站🔗'
+}
+.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,
+.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {
+  display: block
+}
+/* 主内容区 */
+.el-input.el-input--small.el-input-group.el-input-group--prepend::before {
+/* 先隐藏起来 */
+display: none;
+/* 绝对定位 */
+position: absolute;
+/* 向上移动60像素 */
+top: -60px;
+/* 文字强制不换行，防止left:50%导致的文字换行 */
+white-space: nowrap;
+/* 圆角 */
+border-radius: 10px;
+/* 距离左边50% */
+left: 50%;
+/* 然后再向左边挪动自身的一半，即可实现居中 */
+transform: translate(-50%);
+/* 填充 */
+padding: 14px 18px;
+background: #444;
+color: #fff;
+}
+/* 小角标 */		   
+.el-input.el-input--small.el-input-group.el-input-group--prepend::after {
+  display: none;
+  content: '';
+  position: absolute;
+/* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。
+我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */										
+  border: 12px solid transparent;
+  border-top-color: #444;
+  left: 50%;
+  transform: translate(-50%, -48px)
+}
+
+#footer {
+  backdrop-filter: saturate(180%) blur(10px);
+  max-width: 1400px;
+  background: #ffffff70 !important;
 }

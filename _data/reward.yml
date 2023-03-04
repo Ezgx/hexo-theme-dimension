@@ -1,0 +1,6 @@
+- class_name: 赞赏
+  reward_list:
+    - name: 张时贰
+      amount: 6.6
+      datatime: 2023-01-01
+      suffix: ￥

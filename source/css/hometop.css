@@ -323,7 +323,6 @@ div#swiper_container{
     background:var(--btn-bg);
     height:30px
 }
-@media screen and (max-width:768px){
     .blog-slider__pagination{
         -webkit-transform:translateX(-50%);
         -moz-transform:translateX(-50%);

@@ -1,4 +1,9 @@
 #category-bar
+  .category-bar-items#category-bar-items
+    !=getarray_bar("tag")
+  a.category-bar-more(href="/tags/") 更多
+
+//- #category-bar
     .category-bar-items#category-bar-items
         .category-bar-item(id='首页')
             a(href="/") 首页

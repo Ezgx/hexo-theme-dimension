@@ -1,26 +1,65 @@
-#footer-wrap
-  if theme.footer.owner.enable
-    - var now = new Date()
-    - var nowYear = now.getFullYear()
-    if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
-    else
-      .copyright!= `&copy;${nowYear} By ${config.author}`
-  if theme.footer.copyright
-    .framework-info
-      span= _p('footer.framework') + ' '
-      a(href='https://hexo.io')= 'Hexo'
-      span.footer-separator |
-      span= _p('footer.theme') + ' '
-      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
-  if theme.footer.custom_text
-    .footer_custom_text!=`©Echocbx`
-  section.main-hero-waves-area.waves-area
-    svg.waves-svg(xmlns='http://www.w3.org/2000/svg', xlink='http://www.w3.org/1999/xlink', viewBox='0 24 150 28', preserveAspectRatio='none', shape-rendering='auto')
-      defs
-        path#gentle-wave(d='M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z')
-      g.parallax
-        use(href='#gentle-wave', x='48', y='0')
-        use(href='#gentle-wave', x='48', y='3')
-        use(href='#gentle-wave', x='48', y='5')
-        use(href='#gentle-wave', x='48', y='7')
+#footer_deal
+  a.deal_link(href="/authorqq/" title="qq" target="_blank")
+    i.fab.fa-qq
+  a.deal_link(href="https://github.com/ezgx" title="github"  target="_blank")
+    i.fab.fa-github
+  img.footer_mini_logo.entered.loading(style="border-radius:50%" src='/img/avatar.png' onclick="btf.scrollToDest(0,500)" title="返回顶部")
+  a.deal_link(href="https://echocbx.tk/" title="主页")
+    i.fas.fa-house
+  a.deal_link(href="/authorwechat/" title="微信" target="_blank")
+    i.fab.fa-weixin
+#Jay-footer
+  .footer-group
+    h3.footer-title 直达
+    .footer-links
+      a.footer-item(href="https://echocbx.tk" target="_blank") 我的主页
+      a.footer-item(href="/about/") 关于
+      a.footer-item(href="/link/") 友链
+      a.footer-item(onclick="toRandomPost()") 随机文章
+  .footer-group
+    h3.footer-title 标签
+    .footer-links
+      a.footer-item(href="/tags/教程/") 📚教程
+      a.footer-item(href="/categories/butterfly/") 🦋魔改教程
+      a.footer-item(href="/categories/前端/") 🌈捣鼓前端
+      a.footer-item(href="/categories/生活/") 📙生活
+  .footer-group
+    h3.footer-title 关于
+    .footer-links
+      a.footer-item(href="/about/") 关于我
+      a.footer-item(href="/archives") 文章归档
+      a.footer-item(href="/tags") 标签
+  .footer-group
+    h3.footer-title 友链
+    .footer-links#friend-links-in-footer
+  .footer-group
+    h3.footer-title 协议
+    .footer-links
+      a.footer-item(href="/cc/") 版权协议
+#footer-banner
+  .footer-banner-links
+    .footer-banner-left
+      .footer-banner-left
+        #footer-banner-tips
+        script(src='https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js')
+        script.
+          var typed = new Typed("#footer-banner-tips", {
+            strings: ["我已经准备好了足够挡雨的伞，雨却没有到来...", "彼方为谁，无我有问，九月露湿，待君之前。欢迎来到我的博客！"],
+            startDelay: 200,
+            backDelay: 2000,
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 20
+          })
+
+    .footer-banner-right
+      a.footer-banner-link(href="https://hexo.io/zh-cn/" title="Hexo") 框架：Hexo
+      a.footer-banner-link |
+      a.footer-banner-link(href="/2023/dimension" title="theme") 主题：dimension
+      a.footer-banner-link |
+      a.footer-banner-link(href="/about/" title="about") 关于
+      a.footer-banner-link |
+      a.footer-banner-link.cc(href="/cc/" title="cc协议")
+        i.fab.fa-creative-commons
+        span 协议。
+  

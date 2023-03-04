@@ -1,4 +1,5 @@
 #nav a:hover {
+  background: var(--anzhiyu-main);
   transition: 0.3s;
 }
 
@@ -7,6 +8,7 @@
 }
 #nav-totop #percent {
   font-size: 12px;
+  background: var(--anzhiyu-white);
   color: var(--anzhiyu-main);
   width: 25px;
   height: 25px;
@@ -18,6 +20,7 @@
 }
 .nav-fixed #nav-totop #percent,
 .page #nav-totop #percent {
+  background: var(--font-color);
   color: var(--card-bg);
   font-size: 13px;
 }
@@ -53,6 +56,9 @@
   justify-content: center;
   transition: 0.3s;
 }
+.nav-button {
+  cursor: pointer;
+}
 div#menus {
   display: flex;
   align-items: center;
@@ -67,6 +73,9 @@ div#menus {
 
 #nav .site-page {
   padding-bottom: 0px;
+}
+#nav *::after {
+  background-color: transparent !important;
 }
 
 /* 顶栏修改 */
@@ -135,6 +144,7 @@ ul.menus_item_child {
 
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
+  max-width: 350px;
   transform: translateX(-50%);
   right: auto;
   left: auto !important;
@@ -154,7 +164,9 @@ ul.menus_item_child {
 @media screen and (min-width: 768px) {
   .page .menus_item:hover > a.site-page {
     color: var(--anzhiyu-white) !important;
+    background: var(--anzhiyu-main);
     transition: 0.3s;
+    box-shadow: var(--anzhiyu-shadow-main);
   }
 }
 
@@ -163,6 +175,7 @@ ul.menus_item_child {
 }
 #nav {
   padding: 0 calc((100% - 1420px) / 2);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 #nav a {
@@ -171,7 +184,9 @@ ul.menus_item_child {
 }
 .page #nav a:hover {
   color: var(--anzhiyu-white) !important;
+  background: var(--anzhiyu-main);
   transition: 0.3s;
+  box-shadow: var(--anzhiyu-shadow-main);
 }
 
 #menus > div.menus_items > div > a {
@@ -215,6 +230,7 @@ ul.menus_item_child {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   opacity: 0;
+  box-shadow: 0 0 3px var(--anzhiyu-theme);
   line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/
 }
 #page-name:hover:before {
@@ -250,9 +266,6 @@ center#name-container {
   transform: translate(-50%);
   transition: 0.3s;
   line-height: 60px;
-}
-.nav-fixed #menus .menus_items {
-  transition: 0.3s;
 }
 .nav-fixed #name-container {
   top: 15%;
@@ -296,6 +309,7 @@ center#name-container {
 
 @media screen and (min-width: 900px) {
   #nav .back-home-button:hover {
+    box-shadow: var(--anzhiyu-shadow-main);
   }
 }
 
@@ -333,6 +347,7 @@ center#name-container {
   flex-direction: column;
   font-size: 12px;
   color: var(--anzhiyu-secondtext);
+  box-shadow: var(--anzhiyu-shadow-border);
   transition: 0s;
   opacity: 0;
   pointer-events: none;
@@ -394,6 +409,7 @@ center#name-container {
   background: var(--anzhiyu-secondbg);
 }
 #page-header #nav .back-home-button {
+  cursor: pointer;
   position: relative;
 }
 

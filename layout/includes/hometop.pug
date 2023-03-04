@@ -1,51 +1,9 @@
 if is_home()
     #home_top
+        center
+            h1.hometoptext 推荐阅读
         .recent-top-post-group#recent-top-post-group
             .recent-post-top#recent-post-top
-                #bannerGroup
-                    #banners
-                        .banners-title
-                            .banners-title-big 九月露湿
-                            .banners-title-big 待君之前
-                            .banners-title-smal 异次元欢迎您
-                        .tags-group-all
-                            .tags-group-wrapper
-                                each i in site.data.creativity
-                                    - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
-                                    - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
-                                    each item, index in i.creativity_list
-                                        if ((index + 1 <= evenNum.length) && (index + 1 <= oddNum.length))
-                                            .tags-group-icon-pair
-                                                .tags-group-icon(style=`background: ${evenNum[index].color}`)
-                                                    img(src=evenNum[index].icon, onerror='this.onerror=null,this.src="/img/friend_404.gif"', title=evenNum[index].name, alt=evenNum[index].name)
-                                                .tags-group-icon(style=`background: ${oddNum[index].color}`)
-                                                    img(src=oddNum[index].icon, onerror='this.onerror=null,this.src="/img/friend_404.gif"', title=oddNum[index].name, alt=oddNum[index].name)
-                                each i in site.data.creativity
-                                    - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
-                                    - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
-                                    each item, index in i.creativity_list
-                                        if ((index + 1 <= evenNum.length) && (index + 1 <= oddNum.length))
-                                            .tags-group-icon-pair
-                                                .tags-group-icon(style=`background: ${evenNum[index].color}`)
-                                                    img(src=evenNum[index].icon, onerror='this.onerror=null,this.src="/img/friend_404.gif"', title=evenNum[index].name, alt=evenNum[index].name)
-                                                .tags-group-icon(style=`background: ${oddNum[index].color}`)
-                                                    img(src=oddNum[index].icon, onerror='this.onerror=null,this.src="/img/friend_404.gif"', title=oddNum[index].name, alt=oddNum[index].name)
-                        a#banner-hover(onclick="toRandomPost()")
-                            span.bannerText 随便逛逛
-                            i.fas.fa-arrow-right.banner-righticon
-                    .categoryGroup
-                        .categoryItem(style='box-shadow:var(--bywind-shadow-blue)')
-                            a.categoryButton.CB1.bikan(href='/tags/windows/')
-                                span.categoryButtonText 系统教程
-                                i.fas.fa-dove
-                        .categoryItem(style='box-shadow:var(--bywind-shadow-red)')
-                            a.categoryButton.remen(href='/tags/Hexo/')
-                                span.categoryButtonText 博客相关
-                                i.fas.fa-burn
-                        .categoryItem(style='box-shadow:var(--bywind-shadow-green)')
-                            a.categoryButton.shiyong(href='/tags/教程/')
-                                span.categoryButtonText 实用教程
-                                i.fas.fa-book
                 .topGroup
                     if site.data.slider
                         each i in site.data.slider

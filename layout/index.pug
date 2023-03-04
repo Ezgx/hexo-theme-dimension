@@ -3,8 +3,11 @@ extends includes/layout.pug
 block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
-    include includes/tagsBar.pug
+    include includes/hometop.pug
     include includes/linksBar.pug
-    include includes/bbTimeList.pug
+    h1.hometoptext 文章列表
+    .category-in-bar
+      .category-in-bar-tips
+      include includes/tagsBar.pug
     +postUI
     include includes/pagination.pug

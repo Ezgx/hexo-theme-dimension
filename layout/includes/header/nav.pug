@@ -28,4 +28,8 @@ nav#nav
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
 
+    div.nav-button.console-button
+      a.link(onclick="heo.showConsole()")
+        i.fas.fa-gear
+
     !=partial('includes/header/menu_item', {}, {cache: true})

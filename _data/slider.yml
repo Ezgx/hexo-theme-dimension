@@ -3,33 +3,33 @@
 #  link: 置顶文章链接，站内文章建议填相对链接
 #  title: 置顶文章标题
 #  description: 置顶文章描述
-- cover: https://cdn.niux.plus/LightPicture/2023/01/4d8bf5f62d350018.png
+- cover: https://ezgx.site/img/posts/demo.png
+  timeline: '2022-12-29'
+  link: /2023/dimension
+  title: hexo主题dimension
+  description: 独立主题了！
+- cover: /img/posts/home.png
+  timeline: '2023-01-20'
+  link: /2023/46680
+  title: 【原创】cbx-home开源首页
+  description: cbx-home是一个由纯css构成的轻量化，优雅，支持个人多项目的个人主页。
+- cover: /img/covers/7.jpg
   timeline: '2022-12-10'
-  link: /posts/da0f
+  link: /2022/da0f
   title: 百度网盘直连下载
   description: 百度网盘下载太慢？没有vip？一篇文章帮你解决！
-- cover: https://cdn.niux.plus/LightPicture/2023/01/3b31797fe46693ad.png
-  timeline: '2022-12-29'
-  link: /posts/33392
-  title: hexo一体化上传命令
-  description: hexo一体化上传命令
-- cover: https://cdn.niux.plus/LightPicture/2023/01/b24c742c22bc67e8.png
-  timeline: '2022-12-16'
-  link: /posts/48213
-  title: 关于github被墙这件事
-  description: 一些看法~
-- cover: https://cdn.niux.plus/LightPicture/2023/01/63f19b064d601480.png
+- cover: /img/covers/1.jpg
+  timeline: '2023-02-11'
+  link: /2023/5781
+  title: 一篇文章教你搞定butterfly主题洪化
+  description: heo化来喽！
+- cover: /img/covers/6.jpg
   timeline: '2022-12-12'
-  link: /posts/65320
+  link: /2022/65320
   title: markdown-it食用教程
   description: 给hexo食用更高级的渲染器：markdown-it
-- cover: https://cdn.niux.plus/LightPicture/2023/01/239f9f720eb20e6e.png
+- cover: /img/covers/4.jpg
   timeline: '2023-01-31'
-  link: /posts/34037
+  link: /2023/34037
   title: 自定义美化你的windows桌面！
   description: 天天写博客跟explorer打交道，我需要一个高效，美观，易用的explorer，还有方便的启动程序方式，并且占用不能太高
-- cover: https://cdn.niux.plus/LightPicture/2023/01/b294b981bfbe0f5c.png
-  timeline: '2023-01-20'
-  link: /posts/32096
-  title: hexo优化方案汇总
-  description: 据研究统计：加载超过4秒就会有很多用户离开网页。加载过慢会严重降低体验，哪怕是几秒。
