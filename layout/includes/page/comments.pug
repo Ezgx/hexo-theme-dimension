@@ -1,0 +1,20 @@
+#article-container
+  if top_img === false
+    h1.page-title= page.title
+  #maincontent
+    #form-wrap
+      img#beforeimg(src='https://pic.imgdb.cn/item/64044397f144a010074433da.png')
+      #envelope
+        form
+          .formmain
+            img.headerimg(src=url_for(theme.envelope_comment.cover))
+            .comments-main
+              h3.title3=`来自` + config.author + `的留言:`
+              .comments
+                each i in theme.envelope_comment.message
+                  div=`${i}`
+              .bottomcontent
+                img.bottomimg(src='https://ae01.alicdn.com/kf/U0968ee80fd5c4f05a02bdda9709b041eE.png')
+              p.bottomhr=`${theme.envelope_comment.bottom}`
+      img#afterimg(src='https://pic.imgdb.cn/item/64044397f144a010074433c4.png')
+  != page.content

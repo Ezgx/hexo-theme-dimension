@@ -2,6 +2,8 @@ extends includes/layout.pug
 
 block content
   #post
+    .dimension-toc
+      include includes/widget/card_post_toc.pug
     if top_img === false
       include includes/header/post-info.pug
 

@@ -25,7 +25,7 @@
     --anzhiyu-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
     --anzhiyu-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
     --style-border: 1px solid var(--anzhiyu-card-border);
-    --anzhiyu-blue-main: #3b70fc;
+    --anzhiyu-blue-main: #ff7c7c;
     --style-border-hover: 1px solid var(--anzhiyu-main);
     --style-border-dashed: 1px dashed var(--anzhiyu-theme-op);
     --style-border-avatar: 4px solid var(--anzhiyu-background);
@@ -39,10 +39,10 @@
   }
   
   [data-theme="light"] {
-    --anzhiyu-theme: #3b70fc;
+    --anzhiyu-theme: #ff7c7c;
     --anzhiyu-theme-deep: #1856fb;
     --anzhiyu-theme-op: #4259ef23;
-    --anzhiyu-blue: #3b70fc;
+    --anzhiyu-blue: #ff7c7c;
     --anzhiyu-red: #d8213c;
     --anzhiyu-pink: #ff7c7c;
     --anzhiyu-green: #57bd6a;

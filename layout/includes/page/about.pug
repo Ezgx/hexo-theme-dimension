@@ -40,7 +40,7 @@
       .shape.shape-2(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
       .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
     .content
-      h1 Hello world!
+      h1 Hello there!
 
   .author-content
     .author-content-item.skills
@@ -76,8 +76,41 @@
         .careers-group
           .careers-item
             .circle(style='background:#357ef5')
-            .name EDU
+            .name EDU,软件工程专业
         img.author-content-img.no-lightbox(alt='生涯', src='https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png')
+
+  .author-content
+    .about-statistic.author-content-item
+      .card-content
+        .author-content-item-tips 数据
+        span.author-content-item-title 访问统计
+        #statistic
+        .post-tips
+          | 统计信息来自
+          a(href='https://invite.51.la/1NzKqTeb?target=V6', target='_blank', rel='noopener nofollow') 51la网站统计
+        .banner-button-group
+          a.banner-button(onclick='pjax.loadUrl("/archives/")', data-pjax-state)
+            i.fas.fa-circle-arrow-up-right
+            |
+            span.banner-button-text 文章隧道
+    .author-content-item-group.column.mapAndInfo
+      .author-content-item.map.single
+        span.map-title
+          | 我现在住在
+          b 中国，京海市
+      .author-content-item.selfInfo.single
+        div
+          span.selfInfo-title 生于
+          |
+          span.selfInfo-content#selfInfo-content-year(style='color:#43a6c6') 2008
+        div
+          span.selfInfo-title 自由市场
+          |
+          span.selfInfo-content(style='color:#c69043') 臭卖鱼的
+        //- div
+          span.selfInfo-title 现在职业
+          |
+          span.selfInfo-content(style='color:#b04fe6') 初三学生👨‍🎓
 
   .author-content
     .author-content-item.personalities
@@ -114,7 +147,6 @@
       .card-background-icon
         i.fas.fa-dice-d20
 
-  .author-content
     .author-content-item.comic-content
       .card-content
         .author-content-item-tips 爱好番剧
@@ -125,16 +157,15 @@
               i.fas.fa-circle-arrow-up-right
               |
               span.banner-button-text 立即追番
+
     .author-content-item.like-music
       .card-content
         .author-content-item-tips 音乐偏好
-        span.author-content-item-title 日语、摇滚。
+        span.author-content-item-title 日语、摇滚、
         |
         span.author-content-item-title 华语流行
         .content-bottom
           .tips 跟 Echocbx 一起欣赏更多音乐
-
-  .author-content
 
   .author-content
     .author-content-item.single.reward
@@ -157,27 +188,8 @@
           .reward-list-updateDate
             | 最新更新时间：
             time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
-      .post-reward
-        button.tip-button.reward-button
-          span.tip-button__text 不给糖果就捣蛋
-          .coin-wrapper
-            .coin
-              .coin__middle
-              .coin__back
-              .coin__front
-          .reward-main
-            ul.reward-all
-              li.reward-item
-                a(href='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png', target='_blank')
-                  img.post-qr-code-img(alt='wechat', src='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png')
-                .post-qr-code-desc wechat
-              li.reward-item
-                a(href='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png', target='_blank')
-                  img.post-qr-code-img(alt='alipay', src='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png')
-                .post-qr-code-desc alipay
 
 script(src=url_for(theme.CDN.option.countup_js))
-script(src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js")
 script.
   (() => {
     function isInViewPortOfOne(el) {
@@ -288,3 +300,4 @@ script.
         })
       })
   })()
+

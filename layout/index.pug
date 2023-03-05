@@ -3,11 +3,17 @@ extends includes/layout.pug
 block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
-    include includes/hometop.pug
-    include includes/linksBar.pug
-    h1.hometoptext 文章列表
-    .category-in-bar
-      .category-in-bar-tips
+    .hometoptext
+      .text 
+        i.fas.fa-fire 站长推荐
+      include includes/hometop.pug
+    .hometoptext
+      .text 
+        i.fas.fa-tags 分类标签
       include includes/tagsBar.pug
+      include includes/linksBar.pug
+    .hometoptext2
+      .text 
+        i.fas.fa-bookmark 全部文章
     +postUI
     include includes/pagination.pug

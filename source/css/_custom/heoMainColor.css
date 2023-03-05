@@ -25,9 +25,9 @@
   }
   
   [data-theme=light] {
-    --heo-theme: #425AEF;
+    --heo-theme: #ff7c7c;
     --heo-theme-op: #4259ef23;
-    --heo-blue: #425AEF;
+    --heo-blue: #ff7c7c;
     --heo-red: #D8213C;
     --heo-pink: #FF7C7C;
     --heo-green: #57bd6a;

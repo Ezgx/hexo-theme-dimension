@@ -1,21 +1,6 @@
-#links-bar
-    .links-bar-items#links-bar-items
-        .links-bar-item(id='优选大佬友链')
-          a(href="javascript:void(0)") 优选大佬友链:→
-        .links-bar-item(id='张洪Heo')
-            a(href="https://blog.zhheo.com/") 1.张洪Heo
-        .links-bar-item(id='陈鑫磊的博客')
-            a(href="https://www.cxl2020mc.top") 2.陈鑫磊的博客
-        .links-bar-item(id='怕冷爱上雪')
-            a(href="https://blog.4t.pw/") 3.怕冷爱上雪
-        .links-bar-item(id='Xlenco')
-            a(href="http://xlenco.top/") 4.Xlenco
-        .links-bar-item(id='心流')
-            a(href="https://blog.panghai.top") 5.心流
-        .links-bar-item(id='Foward')
-            a(href="https://fsllala.eu.org") 6.Foward
-        .links-bar-item(id='空位')
-            a(href="javascript:void(0)") 空位
-        .links-bar-item(id='空位')
-            a(href="javascript:void(0)") 空位
-    a.links-bar-more(href="/link/") 更多友链
+#category-bar
+  .category-bar-items#category-bar-items
+    .category-bar-item(id='首页')
+      a(href="/") 首页
+    !=getarray_bar("category")
+  a.category-bar-more(href="/categories/") 更多分类

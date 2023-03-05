@@ -129,6 +129,39 @@ anzhiyu.initIndexEssay();
 anzhiyu.changeTimeInEssay();
 anzhiyu.reflashEssayWaterFall();
 
+document.addEventListener("copy", function () {
+  new Vue({
+    data: function () {
+        this.$notify({
+            title: "复制成功",
+            message: "转载请遵守cc协议",
+            position: 'top-left',
+            offset: 50,
+            showClose: true,
+            type: "success",
+            duration: 4000
+        });
+    }
+  })
+})// 检测按键
+window.onkeydown = function (e) {
+  if (e.keyCode === 123) {
+    new Vue({
+      data: function () {
+          this.$notify({
+              title: "开发者模式已打开",
+              message: "扒站请遵守GPL协议",
+              position: 'top-left',
+              offset: 50,
+              showClose: true,
+              type: "warning",
+              duration: 99999999999
+          });
+      }
+    })
+  }
+}
+
 let heo_cookiesTime = null;
 let heo_musicPlaying = false;
 let heo_keyboard = false;

@@ -5,18 +5,19 @@
     display: none
     width: 100%
     height: 100%
-    background: alpha($dark-black, .8)
+    background: #ffffff7a
+    backdrop-filter blur(10px)
 
   #sidebar-menus
     position: fixed
     top: 0
-    right: -($sidebar-width)
+    right: -310px
     z-index: 103
     overflow-x: hidden
     overflow-y: auto
     width: $sidebar-width
     height: 100%
-    background: var(--sidebar-bg)
+    box-shadow: 0 0 10px 5px #5c5c5c
     transition: all .5s
 
     &.open
