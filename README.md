@@ -2,7 +2,7 @@
 
 一款单栏布局的hexo主题，基于butterfly。
 
-文档见[https://ezgx.tk/2023/dimension](https://ezgx.tk/2023/dimension)
+文档见[https://ezgx.site/2023/dimension](https://ezgx.site/2023/dimension)
 
 ![](https://ezgx.site/img/posts/demo.png)
 

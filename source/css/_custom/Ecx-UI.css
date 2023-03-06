@@ -9,9 +9,7 @@
     box-shadow: 0px 0px 0px 1px #ababab;
 }
 #nav {
-  padding: 0px;
-  padding-right: 10vh;
-  padding-left: 10vh;
+  padding: 20px !important;
 }
 #page-header.nav-fixed #nav {
     top: -57px !important;
@@ -470,7 +468,7 @@ div.relatedPosts-list {
 }
 /* 头图不全屏 */
 #page-header.full_page {
-    height: 500px !important;
+    height: 57vh !important;
     background-attachment: fixed !important;
 }
 #page-header #scroll-down {
@@ -1607,9 +1605,9 @@ color: #fff;
 
 .dimension-toc:hover {
   height: fit-content;
-  width: fit-content;
   background: #ffffffbd;
   left: 10px;
+  padding: 20px;
 }
 
 .dimension-toc {
@@ -1618,15 +1616,14 @@ color: #fff;
   backdrop-filter: blur(10px);
   transition: all .4s;
   border-radius: 20px;
-  padding: 20px;
-  height: 60px;
+  padding: 8px;
+  height: 50px;
   top: 15vh;
-  max-width: 400px;
+  width: 300px;
   z-index: 10;
   position: fixed;
   background: #ff7c7c;
-  left: -10vw;
-  min-width: 300px;
+  left: -200px;
 }
 
 .item-headline {
