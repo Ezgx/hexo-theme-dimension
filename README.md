@@ -4,7 +4,7 @@
 
 文档见[https://ezgx.site/2023/dimension](https://ezgx.site/2023/dimension)
 
-![](https://ezgx.site/img/posts/demo.png)
+![](https://pic.imgdb.cn/item/64061c93f144a01007f083cb.jpg)
 
 ## qq交流群：
 ![](https://ezgx.site/img/qqgroup.png)
