@@ -1,5 +1,11 @@
 /* Exc-UI */
 
+/* fancybox图片灯箱 */
+.fancybox__backdrop {
+  backdrop-filter: blur(10px) !important;
+  background: #ffffff7a !important;
+}
+
 /* 导航栏 */
 #nav {
     top: 0px !important;
