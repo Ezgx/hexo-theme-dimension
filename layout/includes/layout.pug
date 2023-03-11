@@ -12,24 +12,12 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     link(rel='preload' as='font' type='font/ttf' href='/fonts/font.woff2' crossorigin='anonymous')
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css')
     script(async='' data-pjax='' src='/js/custom.js')
-    script(src='/js/tagsbar.js')
     script(src='/js/random.js')
-    script(src='/js/funnytitle.js')
     script(async='' src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js')
     script(async='' src='https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js')
-    script(src='/js/fps.js')
     script(async='' data-pjax='' src='/js/linksbar.js')
     include ./head.pug
   body
-    script(async='' data-pjax='' src='/js/custom.js')
-    script(src='/js/tagsbar.js')
-    script(src='/js/random.js')
-    script(src='/js/funnytitle.js')
-    script(async='' src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js')
-    script(async='' src='https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js')
-    script(src='/js/fps.js')
-    script(async='' data-pjax='' src='/js/linksbar.js')
-
     if theme.preloader.enable
       !=partial('includes/loading/index', {}, {cache: true})
 

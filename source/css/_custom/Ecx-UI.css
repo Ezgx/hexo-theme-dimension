@@ -534,7 +534,7 @@ img {
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #49b1f5;
+    background-color: #ff7a7a;
     background-image: -webkit-linear-gradient(
       45deg,
       rgba(255, 255, 255, 0.4) 25%,
@@ -554,7 +554,7 @@ img {
   
   ::-moz-selection {
     color: #fff;
-    background-color: #49b1f5;
+    background-color: #ff7a7a;
   }
 
 /* 首页下滑小箭头 */
@@ -663,7 +663,14 @@ img {
 #post .post-copyright {
   box-shadow: 0px 0px 10px 6px #aaa;
 }
-
+a.post-meta__tags {
+  box-shadow: 0 0 0 2px #ff7a7a !important;
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  margin-right: 10px !important;
+  color: #ff7a7a !important;
+  padding: 10px !important;
+}
 
 /* 帧率检测 */
 #fps {

@@ -1,5 +1,8 @@
 - let comments = theme.comments
 #post-info
+  .post-meta__tag-list
+    each item, index in page.tags.data
+      a(href=url_for(item.path)).post-meta__tags #[=item.name]
   h1.post-title= page.title || _p('no_title')
     if theme.post_edit.enable
       a.post-edit-link(href=theme.post_edit.url + page.source title=_p('post.edit') target="_blank")

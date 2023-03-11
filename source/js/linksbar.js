@@ -1,3 +1,27 @@
+PostActive()
+topPostScroll()
+
+//分类条
+function PostActive(){
+  var urlinfo = window.location.pathname;
+  urlinfo = decodeURIComponent(urlinfo)
+  console.log(urlinfo);
+  }
+
+//鼠标控制横向滚动
+function topPostScroll(){
+  if (document.getElementById("recent-post-top")){
+    let xscroll = document.getElementById("recent-post-top");
+  xscroll.addEventListener("mousewheel", function (e) {
+    //计算鼠标滚轮滚动的距离
+    let v = -e.wheelDelta / 2;
+    xscroll.scrollLeft += v;
+    //阻止浏览器默认方法
+    e.preventDefault();
+}, false);
+  }
+}
+
 tagBarActive()
 toptagBarScroll()
 
