@@ -17,7 +17,7 @@ hexo.on('ready', () => {
 ┃  ECX-UI:    ┃  ╚═════╝   ╚═════╝   ╚╝    ╚╝                     ╚═════╝╚═╝    ╚══════╝    ┃
 ┃  V - 1.3.0  ┃                            butterfly : ${version}                                ┃
 ┣━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃                         Ecx-UI by Echocbx - https://ezgx.tk/                              ┃
+┃                       dimension by Echocbx - https://ezgx.site/                           ┃
 ┃                  based-on--theme-butterfly - https://butterfly.js.org/                    ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 `)

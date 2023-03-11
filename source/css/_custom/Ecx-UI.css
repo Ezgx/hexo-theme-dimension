@@ -95,9 +95,12 @@ footer {
 
 /* 搜索块 */
 .search-dialog {
-  background: rgba(255,255,255,0.7) !important;
-  box-shadow: 0px 0px 10px 5px rgb(255 166 0) !important;
+  box-shadow: 0px 0px 0px 1px #ababab !important;
   border-radius: 8px;
+}
+#search-mask {
+  backdrop-filter: blur(10px);
+  background: #ffffffbd !important;
 }
 #aside-content>.card-info {
   background: #fff url(https://img02.anzhiy.cn/adminuploads/1/2022/10/26/6358a07bf21fc.webp) top -24% center no-repeat !important;
@@ -664,23 +667,17 @@ img {
 
 /* 帧率检测 */
 #fps {
+  color: #fff;
+  border-radius: 2rem !important;
+  background: #ff7c7c;
+  box-shadow: 0 0 0 1px #000;
   position: fixed;
   /* 指定位置 */
   left: 10px;
+  padding: 5px 15px 5px 15px;
+  transition: all .5s;
   bottom: 10px;
   z-index: 1919810;
-}
-[data-theme="light"] #fps {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: var(--backdrop-filter);
-  padding: 4px;
-  border-radius: 4px;
-}
-[data-theme="dark"] #fps {
-  background-color: rgba(0, 0, 0, 0.72);
-  backdrop-filter: var(--backdrop-filter);
-  padding: 4px;
-  border-radius: 4px;
 }
 
 /* 首页分类条展示 */
@@ -898,22 +895,16 @@ img {
 span.recent-post-top-text {
   position: absolute;
   top: 0;
-  left: -40px;
   display: flex;
   z-index: 1;
-  background: rgb(51, 236, 14);
+  background: #ff7c7c;
   color: black;
-  padding: 2px 8px;
-  font-size: .6rem;
+  padding: 1px 8px;
+  font-size: .9rem;
   border-radius: 12px 0 12px 0;
   transition: .3s;
   cursor: pointer
 }
-
-.recent-post-item:hover .recent-post-top-text {
-  left: 0
-}
-
 
 @media screen and (max-width: 768px) {
   .recent-top-post-group {

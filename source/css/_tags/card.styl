@@ -1,0 +1,72 @@
+.card_box
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  background-position: center
+  background-size: cover
+  border-radius: 12px
+  position: relative
+  overflow: hidden
+  padding: 10px
+  color: #fff !important
+  margin: 10px auto
+  &::after
+    content: ''
+    position: absolute
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+    background: rgba(0,0,0,0.1)
+    transition: .5s
+    z-index: 0
+  &:hover
+    .card_mask
+      opacity: 1
+      pointer-events: auto
+  .card_top
+    display: flex
+    z-index: 1
+    align-items: center
+    justify-content: space-between
+  .card_mask
+    position: absolute
+    pointer-events: none
+    z-index: 2
+    transition: .5s
+    opacity: 0
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    padding: 20px
+    background: #333
+    span
+      display: block
+      height: calc(100% - 40px)
+      overflow: auto
+    a
+      text-align: center
+      background: #fff
+      color: #333 !important
+      border-radius: 5px
+      position: absolute
+      width: calc(100% - 40px)
+      bottom: 20px
+      left: 20px
+      &:hover
+        text-decoration: none !important
+        color: white !important
+        background: #49b1f5
+
+  .card_content
+    z-index: 1
+    span
+      font-size: 18px
+      font-weight: bold
+
+[data-theme='dark']
+  .card_box
+    color: #ddd !important
+    &::after
+      background: rgba(0,0,0,0.4)

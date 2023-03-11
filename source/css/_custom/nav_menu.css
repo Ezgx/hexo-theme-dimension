@@ -81,6 +81,7 @@ div#menus {
 /* 顶栏修改 */
 #nav .menus_items .menus_item .menus_item_child li a {
   padding: 2px 16px;
+  width: 130px;
 }
 #nav .menus_items .menus_item .menus_item_child li:hover a {
   color: white !important;
@@ -144,7 +145,7 @@ ul.menus_item_child {
 
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
-  max-width: 350px;
+  max-width: 410px;
   transform: translateX(-50%);
   right: auto;
   left: auto !important;

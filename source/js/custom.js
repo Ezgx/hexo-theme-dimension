@@ -1,3 +1,27 @@
+PostActive()
+topPostScroll()
+
+//分类条
+function PostActive(){
+  var urlinfo = window.location.pathname;
+  urlinfo = decodeURIComponent(urlinfo)
+  console.log(urlinfo);
+  }
+
+//鼠标控制横向滚动
+function topPostScroll(){
+  if (document.getElementById("recent-post-top")){
+    let xscroll = document.getElementById("recent-post-top");
+  xscroll.addEventListener("mousewheel", function (e) {
+    //计算鼠标滚轮滚动的距离
+    let v = -e.wheelDelta / 2;
+    xscroll.scrollLeft += v;
+    //阻止浏览器默认方法
+    e.preventDefault();
+}, false);
+  }
+}
+
 var percentFlag = false; // 节流阀
 function essayScroll() {
   let a = document.documentElement.scrollTop || window.pageYOffset; // 卷去高度
@@ -178,37 +202,6 @@ var heo = {
     }
   },
 
-  //bb添加时间
-  changeTimeInEssay: function() {
-    const relativeDate = function (selector) {
-      selector.forEach(item => {
-        const $this = item
-        const timeVal = $this.getAttribute('datetime')
-        $this.innerText = btf.diffDate(timeVal, true)
-        $this.style.display = 'inline'
-      })
-    }
-
-    if (document.querySelector('#bber')) {
-      relativeDate(document.querySelectorAll('#bber time'))
-    }
-  },
-
-  // 首页bb
-  initIndexEssay: function() {
-    if (document.querySelector('#bber-talk')) {
-      var swiper = new Swiper('.swiper-container', {
-        direction: 'vertical', // 垂直切换选项
-        loop: true,
-        autoplay: {
-        delay: 3000,
-        pauseOnMouseEnter: true
-      },
-      });
-    }
-  },
-
-
   // 只在首页显示
   onlyHome: function() {
     var urlinfo = window.location.pathname;
@@ -331,16 +324,14 @@ var heo = {
 
   //置顶文章横向滚动
   topPostScroll: function() {
-    if (document.getElementById("recent-post-top")){
-      let xscroll = document.getElementById("recent-post-top");
+    if (document.getElementById("recent-post-item")){
+      let xscroll = document.getElementById("recent-post-item");
       xscroll.addEventListener("mousewheel", function (e) {
       //计算鼠标滚轮滚动的距离
       let v = -e.wheelDelta / 2;
       xscroll.scrollLeft += v;
       //阻止浏览器默认方法
-      if(document.body.clientWidth < 1300){
         e.preventDefault();
-      }
       }, false);
     }
   },

@@ -25,17 +25,17 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
         if (now > 1000 + lastTime) {
             var fps = Math.round((frame * 1000) / (now - lastTime));
             if (fps <= 5) {
-                var kd = `<span style="color:#bd0000">一秒一帧🤢</span>`
+                var kd = `一秒一帧🤢`
             } else if (fps <= 15) {
-                var kd = `<span style="color:red">非常难受😖</span>`
+                var kd = `非常难受😖`
             } else if (fps <= 25) {
-                var kd = `<span style="color:orange">较低帧率😨</span>`
+                var kd = `较低帧率😨`
             } else if (fps < 35) {
-                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`
+                var kd = `不太流畅🙄`
             } else if (fps <= 45) {
-                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`
+                var kd = `还不错哦😁`
             } else {
-                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`
+                var kd = `十分流畅🤣`
             }
             document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
             frame = 0;
