@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-dimension",
-  "version": "5.4.8",
+  "version": "5.5.1",
   "description": "一个二次元风格的hexo主题",
   "main": "package.json",
   "scripts": {
