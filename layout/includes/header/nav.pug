@@ -2,7 +2,7 @@
 nav#nav
   #toggle-menu
       a.site-page
-        i.fas.fa-list
+        i.fas.fa-grip-vertical
 
   span#blog_name
     .back-home-button(tabindex='-1')
@@ -27,6 +27,10 @@ nav#nav
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
+
+    div.nav-button.console-button
+      a.link(onclick="btf.scrollToDest(0,500)")
+        i.fas.fa-angles-up
 
     div.nav-button.console-button
       a.link(onclick="heo.showConsole()")

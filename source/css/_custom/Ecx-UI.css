@@ -7,10 +7,12 @@
 }
 
 /* 导航栏 */
-#nav {
-    top: 0px !important;
-    /* width: 80%;
-    margin-left: 10vw !important; */
+#nav, #nav.show {
+    top: 15px;
+    margin: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 96%;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 0px 0px 1px #ababab;
 }
@@ -18,16 +20,17 @@
   padding: 20px !important;
 }
 #page-header.nav-fixed #nav {
-    top: -57px !important;
+    top: -45px !important;
+    transition: unset;
 }
 #page-header.nav-fixed #nav {
   background: #ffffff7a !important;
   box-shadow: 0px 0px 0px 1px #ababab;
-  border-radius: 0px 0px 20px 20px !important;
+  border-radius: 20px 20px 20px 20px !important;
 }
 #nav.show {
   background: #ffffff7a !important;
-  border-radius: 0px 0px 20px 20px !important;
+  border-radius: 20px 20px 20px 20px !important;
   box-shadow: 0px 0px 0px 1px #ababab;
 }
 .navavatar {
@@ -65,7 +68,7 @@
   --title-shadow-color: rgb(255, 255, 255);
 }
 
-/* 页脚悬浮 */
+/* 页脚 */
 footer {
   margin-left: 20px;
   margin-right: 20px;
@@ -76,12 +79,6 @@ footer {
   padding-bottom: 80px;
   color: black;
   text-align: center;
-}
-#footer {
-  box-shadow: 0px 0px 0px 1px #ff7c7c;
-  background: #ffffffbd;
-  /* width: 80%;
-  margin-left: 10vw; */
 }
 #footer-bottom {
   padding: 20px;
@@ -1602,9 +1599,10 @@ color: #fff;
 }
 
 #footer {
+  box-shadow: 0px 0px 0px 1px #ff7c7c;
   backdrop-filter: saturate(180%) blur(10px);
   max-width: 1400px;
-  background: #ffffff70 !important;
+  background: #ffffffbd !important;
 }
 
 .dimension-toc:hover {
@@ -1641,8 +1639,9 @@ color: #fff;
   color: rgb(255, 255, 255);
   padding: 0 15px;
   background-color: #ff7c7c;
-  border-radius: 0 0 10px 10px;
+  padding-bottom: 15px;
   right: 40px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0);
 }
 @media screen and (max-width:600px){
 .newPost {

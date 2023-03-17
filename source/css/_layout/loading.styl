@@ -1,95 +1,50 @@
-if hexo-config('preloader.enable') && hexo-config('preloader.source') == 1
+if hexo-config('preloader')
   .loading-bg
-    position: fixed
-    z-index: 1000
-    width: 50%
-    height: 100%
-    background-color: var(--preloader-bg)
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #ffffffbd;
+    backdrop-filter: blur(10px)
+    z-index: 1001;
+    opacity: 1;
+    transition: .3s;
 
   #loading-box
-    .loading-left-bg
-      @extend .loading-bg
-
-    .loading-right-bg
-      @extend .loading-bg
-      right: 0
-
-    .spinner-box
-      position: fixed
-      z-index: 1001
-      display: flex
-      justify-content: center
-      align-items: center
-      width: 100%
-      height: 100vh
-
-      .configure-border-1
-        position: absolute
-        padding: 3px
-        width: 115px
-        height: 115px
-        background: #ffab91
-        animation: configure-clockwise 3s ease-in-out 0s infinite alternate
-
-      .configure-border-2
-        left: -115px
-        padding: 3px
-        width: 115px
-        height: 115px
-        background: rgb(63, 249, 220)
-        transform: rotate(45deg)
-        animation: configure-xclockwise 3s ease-in-out 0s infinite alternate
-
-      .loading-word
-        position: absolute
-        color: var(--preloader-color)
-        font-size: 16px
-
-      .configure-core
-        width: 100%
-        height: 100%
-        background-color: var(--preloader-bg)
-
+    .loading-img
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: auto;
+      border: 4px solid #f0f0f2;
+      animation-duration: .3s;
+      animation-name: loadingAction;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    .loading-image-dot
+      width: 30px;
+      height: 30px;
+      background: #6bdf8f;
+      position: absolute;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(18px, 24px);
     &.loaded
-      .loading-left-bg
-        transition: all .5s
-        transform: translate(-100%, 0)
+      .loading-bg
+        opacity: 0;
+        z-index: -1000;
 
-      .loading-right-bg
-        transition: all .5s
-        transform: translate(100%, 0)
+  @keyframes loadingAction
+    0% {
+        opacity: 1;
+    }
 
-      .spinner-box
-        display: none
-
-  @keyframes configure-clockwise
-    0%
-      transform: rotate(0)
-
-    25%
-      transform: rotate(90deg)
-
-    50%
-      transform: rotate(180deg)
-
-    75%
-      transform: rotate(270deg)
-
-    100%
-      transform: rotate(360deg)
-
-  @keyframes configure-xclockwise
-    0%
-      transform: rotate(45deg)
-
-    25%
-      transform: rotate(-45deg)
-
-    50%
-      transform: rotate(-135deg)
-
-    75%
-      transform: rotate(-225deg)
-
-    100%
-      transform: rotate(-315deg)
+    100% {
+        opacity: .4;
+    }
+  
+.loading-img
+  background: url(/img/avatar.png) no-repeat center center;
+  background-size: cover;
