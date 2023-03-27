@@ -3,28 +3,27 @@
 # --------------------------------------
 
 menu:
-  # 本站
   本站||: # fas fa-book
     首页: / || fas fa-house-user
     归档: /archives/ || fas fa-box-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  # 友链
-  友链||: # fas fa-link
+  外站||: # fas fa-link
     友链: /link/ || fas fa-link
     站长推荐: /goodsites/ || fas fa-star
     RSS: /atom.xml || fas fa-rss
-  # 更多
-  更多||: # fab fa-github
-    协议: /cc/ || fab fa-creative-commons
-    主题: /2023/dimension || fas fa-wand-magic-sparkles
-  # 关于
-  关于||: # fas fa-address-card
-    关于: /about/ || fas fa-heart
+  找我||: # fab fa-github
     留言: /comments/ || fas fa-comments
     博主QQ: /authorqq/ || fab fa-qq
     博主微信: /authorwechat/ || fab fa-weixin
     QQ群: /qqgroup/ || fas fa-user-group
+    github: https://github.com/ezgx || fab fa-github
+  # 关于
+  我的||: # fas fa-address-card
+    协议: /cc/ || fab fa-creative-commons
+    主题: /2023/dimension || fas fa-wand-magic-sparkles
+    关于: /about/ || fas fa-heart
+    主页: https://home.ezgx.site || fas fa-house-user
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -46,6 +45,36 @@ envelope_comment:
     - 哪怕是有什么想吃的，都可以告诉我哦~
   bottom: 自动书记人偶竭诚为您服务！ #信笺结束语，只能单行
   height: #调整信笺划出高度，默认1050px
+
+post_double_row:
+  enable: true
+
+# 首页板块
+hometop: 
+  enable: true # true或false
+  creativities: # 滚动图标
+    enable: true
+  featured_article: # 推荐文章
+    enable: true
+  show_tag_categroy: # 分类标签
+    enable: true
+
+# 关于页
+about_page:
+  author: Echocbx # 作者名称
+  introduce: 是一名 学生、又菜又爱的前端爱好者、博主 # 作者简介
+  careers: 初中生 # 生涯
+  address: 中国，京海市 # 居住地
+  job: 卖鱼强 # 职业
+  job_address: 旧厂街 # 执业地点
+  birth: 2008 # 出生年
+  personalities: 辩论家 # 人格
+  say_first_line: 九月露湿 # 座右铭第一行
+  say_last_line: 待君之前 # 座右铭第二行
+  character_1: 整活大逝 # 个人特点第一行
+  character_2: 二次元指数MAX # 个人特点第二行
+  anime: 紫罗兰永恒花园 # 追番
+  music: 日语、摇滚、华语流行 #音乐偏好
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
@@ -109,10 +138,6 @@ avatar:
 
 # Disable all banner image
 disable_top_img: false
-
-# heo式首页顶部
-hometop: 
-  enable: false
 
 # The banner image of home page
 index_img: https://img02.anzhiy.cn/adminuploads/1/2023/01/30/63d7422b64891.jpg
@@ -330,8 +355,8 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   use: 
-    # - example
-    # - example2
+    - twikoo
+    - utterances
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -343,8 +368,8 @@ comments:
 # see https://artitalk.js.org/
 artitalk:
   enable: false
-  appId: 
-  appKey: 
+  appId: LHTzZds7F6kkqMddABGhmuWD-MdYXbMMI
+  appKey: ml43vGNCUa21yE0wgEAnNt5N
   path: 
   js:
   option:
@@ -382,10 +407,10 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: 
-  appKey: 
+  appId: QwAIP2LY8da07dZ0uN1LXoWm-MdYXbMMI
+  appKey: lUq1OZCVmH7C3EWGadRCjLG0
   avatar: retro # gravatar style https://valine.js.org/#/avatar
-  serverURLs:  # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: https://valine.ezgx.site/ # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: /img/yanse.jpg # valine background
   visitor: false
   option:
@@ -398,7 +423,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL:  # Waline server address url
+  serverURL: https://waline.ezgx.site/ # Waline server address url
   bg: # waline background
   pageview: false
   option:
@@ -406,7 +431,7 @@ waline:
 # utterances
 # https://utteranc.es/
 utterances:
-  repo: 
+  repo: Ezgx/utterance
   Issue Mapping: pathname/url/title/og:title
   issue_term: pathname
   Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
@@ -425,9 +450,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: 
+  envId: https://twikoo.ezgx.site/
   region: ap-shanghai
-  visitor: true
+  visitor: false
   option:
 
 # Giscus
@@ -451,7 +476,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server:
+  server: atalk.ezgx.site
   site:
   visitor: false
   option:
@@ -722,9 +747,9 @@ subtitle:
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub: 
     - 彼方为谁，无我有问，九月露湿，待君之前。
+    - 花无凋零之日，意无传递之时。
     - 我已经准备好了足够挡雨的伞，雨却没有到来。
-    - 等我攒够六便士，就去找月亮🌙……
-    - 终是庄周梦了蝶，你是恩赐也是劫~
+    - 终是庄周梦了蝶，你是恩赐也是劫。
     # - 愿你历经山河，觉得人间值得。
     # - 小时候怕鬼，因为鬼狰狞恐怖，长大了怕人，因为人衣冠楚楚……
     # - 目之所及，心之所向。
@@ -732,20 +757,19 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 2
+  source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: 
+  pace_css_url: /css/loading.css
 
 # aside (側邊欄)
-# --------------------------------------
-
+# -------------------------------------
 aside:
   enable: false
-  hide: false
+  hide: false 
   button: true
   mobile: false # display on mobile
   position: right # left or right
@@ -761,7 +785,7 @@ aside:
       icon: fab fa-github
       text: github开源
       link: https://github.com/ezgx
-# 公告
+  # 公告
   card_announcement:
     enable: true
     content: Ecx-UI更新啦！ # <img src="/img/liubianxing.gif">
@@ -900,7 +924,7 @@ note:
 pjax:
   enable: true
   exclude:
-    # - xxxx
+    - hometop.js
     # - xxxx
 
 # Inject the css and script (aplayer/meting)

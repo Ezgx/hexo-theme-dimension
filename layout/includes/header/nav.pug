@@ -5,10 +5,11 @@ nav#nav
         i.fas.fa-grip-vertical
 
   span#blog_name
-    .back-home-button(tabindex='-1')
-      a(onclick="btf.scrollToDest(0,500)")
-        img.navavatar(src="/img/avatar.png" width="50" height="50")
+    //- .back-home-button(tabindex='-1')
+      a(href=url_for('/'))
+        img.navavatar(src="https://img1.tianli0.top/%E9%A6%96%E9%A1%B5.png" width="50" height="50")
     a#site-name(href=url_for('/'))
+      img(src="https://img1.tianli0.top/%E9%A6%96%E9%A1%B5.png" width="50" height="50")
       .title #[=config.title]
       i.fa-solid.fa-house
 

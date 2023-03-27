@@ -11,6 +11,8 @@ if hexo-config('css_prefix')
 @import '_tags/*'
 @import '_mode/*'
 @import '_custom/*.css'
+if hexo-config('post_double_row.enable')
+  @import '/postitem.css'
 
 // search
 if hexo-config('algolia_search.enable')

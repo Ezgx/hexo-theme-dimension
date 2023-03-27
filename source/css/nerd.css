@@ -2,7 +2,12 @@
     font-family:'main' ;  /* 字体名自定义即可 */
     src:url('/fonts/font.woff2'); /* 字体文件路径 */
     font-display : swap;
-  }
+}
+@font-face{
+  font-family:'title' ;  /* 字体名自定义即可 */
+  src:url('/fonts/title.woff2'); /* 字体文件路径 */
+  font-display : swap;
+}
 /* 修改valine评论标签颜色 */
 /* 主人 */
 #masters{

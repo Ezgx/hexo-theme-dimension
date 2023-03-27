@@ -3,15 +3,36 @@ extends includes/layout.pug
 block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
-    .hometoptext
-      .text 
-        i.fas.fa-fire 站长推荐
-      include includes/hometop.pug
-    .hometoptext
-      .text 
-        i.fas.fa-tags 分类标签
-      include includes/tagsBar.pug
-      include includes/linksBar.pug
+    if theme.hometop.enable
+      if theme.hometop.creativities.enable
+        .hometoptext3
+          .text #[=config.title]
+          a.randompostbtn(onclick='toRandomPost()',title='随机文章') 
+            i.fas.fa-shuffle 随机文章
+          .skills-style-group
+            .tags-group-all
+              .tags-group-wrapper
+                each i in site.data.creativity
+                  - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
+                  - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
+                  each item, index in i.creativity_list
+                    if ((index+1 <= evenNum.length) && (index+1 <= oddNum.length))
+                      .tags-group-icon-pair
+                        .tags-group-icon(style=`background: ${evenNum[index].color}`)
+                          img.no-lightbox(title=evenNum[index].name, src=evenNum[index].icon)
+                        .tags-group-icon(style=`background: ${oddNum[index].color}`)
+                          img.no-lightbox(title=oddNum[index].name, src=oddNum[index].icon)
+      if theme.hometop.featured_article.enable
+        .hometoptext
+          .text 
+            i.fas.fa-fire 站长推荐
+          include includes/hometop.pug
+      if theme.hometop.show_tag_categroy.enable
+        .hometoptext
+          .text 
+            i.fas.fa-tags 分类标签
+          include includes/tagsBar.pug
+          include includes/linksBar.pug
     .hometoptext2
       .text 
         i.fas.fa-bookmark 全部文章

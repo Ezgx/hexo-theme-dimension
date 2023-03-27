@@ -698,8 +698,3 @@ var heo = {
   $('#menu-downloadimg').on('click',function(){heo.downloadImage(domImgSrc,'zhheo');});
   $('#menu-copyimg').on('click',function(){rm.writeClipImg(domImgSrc);});
   $('#menu-searchBaidu').on('click',rm.searchBaidu);
-  //音乐
-  $('#menu-music-toggle').on('click',heo.musicToggle);
-  $('#menu-music-back').on('click',heo.musicSkipBack);
-  $('#menu-music-forward').on('click',heo.musicSkipForward);
-  $('#menu-music-copyMusicName').on('click',function(){rm.rightmenuCopyText(heo.musicGetName());btf.snackbarShow('复制歌曲名称成功',false,3000);});

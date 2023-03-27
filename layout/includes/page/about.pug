@@ -13,10 +13,8 @@
       .title1 你好，很高兴认识你👋
       .title2
         | 我是
-        span.inline-word Echocbx
-      .title1
-        | 是一名 学生、又菜又爱的前端爱好者、
-        span.inline-word 博主
+        span.inline-word=`${theme.about_page.author}`
+      .title1=`${theme.about_page.introduce}`
     .aboutsiteTips.author-content-item
       .author-content-item-tips 追求
       h2
@@ -76,52 +74,39 @@
         .careers-group
           .careers-item
             .circle(style='background:#357ef5')
-            .name EDU,软件工程专业
+            .name=`${theme.about_page.careers}`
         img.author-content-img.no-lightbox(alt='生涯', src='https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png')
 
   .author-content
-    .about-statistic.author-content-item
-      .card-content
-        .author-content-item-tips 数据
-        span.author-content-item-title 访问统计
-        #statistic
-        .post-tips
-          | 统计信息来自
-          a(href='https://invite.51.la/1NzKqTeb?target=V6', target='_blank', rel='noopener nofollow') 51la网站统计
-        .banner-button-group
-          a.banner-button(onclick='pjax.loadUrl("/archives/")', data-pjax-state)
-            i.fas.fa-circle-arrow-up-right
-            |
-            span.banner-button-text 文章隧道
     .author-content-item-group.column.mapAndInfo
       .author-content-item.map.single
         span.map-title
           | 我现在住在
-          b 中国，京海市
+          b=`${theme.about_page.address}`
       .author-content-item.selfInfo.single
         div
           span.selfInfo-title 生于
           |
-          span.selfInfo-content#selfInfo-content-year(style='color:#43a6c6') 2008
-        div
-          span.selfInfo-title 自由市场
+          span.selfInfo-content#selfInfo-content-year(style='color:#43a6c6')=`${theme.about_page.birth}`
+        //- div
+          span.selfInfo-title 旧厂街
           |
           span.selfInfo-content(style='color:#c69043') 臭卖鱼的
-        //- div
-          span.selfInfo-title 现在职业
+        div
+          span.selfInfo-title=`${theme.about_page.job_address}`
           |
-          span.selfInfo-content(style='color:#b04fe6') 初三学生👨‍🎓
+          span.selfInfo-content(style='color:#b04fe6')=`${theme.about_page.job}`
 
   .author-content
     .author-content-item.personalities
       .author-content-item-tips 人格
-      span.author-content-item-title 辩论家
+      span.author-content-item-title=`${theme.about_page.personalities}`
       .title2(style='color:#ac899c') INTP-A
       .post-tips
         | 在
         a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16personalities
         |  了解更多关于
-        a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC') 执政官
+        a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC')=`${theme.about_page.personalities}`
       .image
         img.no-lightbox(src='/img/16pers.png')
     .author-content-item.myphoto
@@ -131,39 +116,31 @@
     .author-content-item.maxim
       .author-content-item-tips 座右铭
       span.maxim-title
-        span(style='opacity:.6;margin-bottom:8px') 九月露湿，
+        span(style='opacity:.6;margin-bottom:8px')=`${theme.about_page.say_first_line}`
         |
-        span 待君之前。
+        span=`${theme.about_page.say_last_line}`
     .author-content-item.buff
       .card-content
-        .author-content-item-tips 特长
+        .author-content-item-tips 特性
         span.buff-title
           span(style='opacity:.6;margin-bottom:8px')
-            span.inline-word 整活大逝
+            span.inline-word=`${theme.about_page.character_1}`
           |
-          span
-            | 二次元指数
-            span.inline-word MAX
+          span=`${theme.about_page.character_2}`
       .card-background-icon
         i.fas.fa-dice-d20
 
     .author-content-item.comic-content
       .card-content
         .author-content-item-tips 爱好番剧
-        span.author-content-item-title 紫罗兰永恒花园
+        span.author-content-item-title=`${theme.about_page.anime}`
         .content-bottom
           .banner-button-group
-            a.banner-button(onclick='window.open("https://www.bilibili.com/bangumi/play/ep173286?from=search&seid=10927182858100936967&from_spmid=666.25.episode.0")', data-pjax-state)
-              i.fas.fa-circle-arrow-up-right
-              |
-              span.banner-button-text 立即追番
 
     .author-content-item.like-music
       .card-content
         .author-content-item-tips 音乐偏好
-        span.author-content-item-title 日语、摇滚、
-        |
-        span.author-content-item-title 华语流行
+        span.author-content-item-title=`${theme.about_page.music}`
         .content-bottom
           .tips 跟 Echocbx 一起欣赏更多音乐
 
