@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-dimension",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "description": "一个二次元风格的hexo主题",
   "main": "package.json",
   "scripts": {
@@ -28,5 +28,5 @@
   },
   "homepage": "https://ezgx.site/",
   "author": "Echocbx",
-  "license": "MIT"
+  "license": "GPL-V3"
 }
