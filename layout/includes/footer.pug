@@ -1,53 +1,39 @@
 #footer_deal
-  a.deal_link(href="/authorqq/" title="qq" target="_blank")
-    i.fab.fa-qq
-  a.deal_link(href="https://github.com/ezgx" title="github"  target="_blank")
-    i.fab.fa-github
-  img.footer_mini_logo.entered.loading(style="border-radius:50%" src='/img/avatar.png' onclick="btf.scrollToDest(0,500)" title="返回顶部")
-  a.deal_link(href="https://home.ezgx.site/" title="主页")
-    i.fas.fa-house
-  a.deal_link(href="/authorwechat/" title="微信" target="_blank")
-    i.fab.fa-weixin
+  img.footer_mini_logo.entered.loading(style="border-radius:50%" src=url_for(theme.footer.avatar) onclick="btf.scrollToDest(0,500)" title="返回顶部")
 #Jay-footer
   .footer-group
-    h3.footer-title 直达
+    h3.footer-title=`${theme.footer.line_1_title}`
     .footer-links
-      a.footer-item(href="https://home.ezgx.site" target="_blank") 我的主页
-      a.footer-item(href="/about/") 关于
-      a.footer-item(href="/link/") 友链
-      a.footer-item(onclick="toRandomPost()") 随机文章
+      a.footer-item(href=url_for(theme.footer.line_1.item_1.link))=`${theme.footer.line_1.item_1.name}`
+      a.footer-item(href=url_for(theme.footer.line_1.item_2.link))=`${theme.footer.line_1.item_2.name}`
+      a.footer-item(href=url_for(theme.footer.line_1.item_3.link))=`${theme.footer.line_1.item_3.name}`
+      a.footer-item(href=url_for(theme.footer.line_1.item_4.link))=`${theme.footer.line_1.item_4.name}`
   .footer-group
-    h3.footer-title 标签
+    h3.footer-title=`${theme.footer.line_2_title}`
     .footer-links
-      a.footer-item(href="/tags/教程/") 📚教程
-      a.footer-item(href="/categories/butterfly/") 🦋魔改教程
-      a.footer-item(href="/categories/前端/") 🌈捣鼓前端
-      a.footer-item(href="/categories/生活/") 📙生活
+      a.footer-item(href=url_for(theme.footer.line_2.item_1.link))=`${theme.footer.line_2.item_1.name}`
+      a.footer-item(href=url_for(theme.footer.line_2.item_2.link))=`${theme.footer.line_2.item_2.name}`
+      a.footer-item(href=url_for(theme.footer.line_2.item_3.link))=`${theme.footer.line_2.item_3.name}`
+      a.footer-item(href=url_for(theme.footer.line_2.item_4.link))=`${theme.footer.line_2.item_4.name}`
   .footer-group
-    h3.footer-title 关于
+    h3.footer-title=`${theme.footer.line_3_title}`
     .footer-links
-      a.footer-item(href="/about/") 关于我
-      a.footer-item(href="/archives") 文章归档
-      a.footer-item(href="/tags") 标签
+      a.footer-item(href=url_for(theme.footer.line_3.item_1.link))=`${theme.footer.line_3.item_1.name}`
+      a.footer-item(href=url_for(theme.footer.line_3.item_2.link))=`${theme.footer.line_3.item_2.name}`
+      a.footer-item(href=url_for(theme.footer.line_3.item_3.link))=`${theme.footer.line_3.item_3.name}`
+      a.footer-item(href=url_for(theme.footer.line_3.item_4.link))=`${theme.footer.line_3.item_4.name}`
   .footer-group
-    h3.footer-title 协议
+    h3.footer-title=`${theme.footer.line_4_title}`
     .footer-links
-      a.footer-item(href="/cc/") 版权协议
+      a.footer-item(href=url_for(theme.footer.line_4.item_1.link))=`${theme.footer.line_4.item_1.name}`
+      a.footer-item(href=url_for(theme.footer.line_4.item_2.link))=`${theme.footer.line_4.item_2.name}`
+      a.footer-item(href=url_for(theme.footer.line_4.item_3.link))=`${theme.footer.line_4.item_3.name}`
+      a.footer-item(href=url_for(theme.footer.line_4.item_4.link))=`${theme.footer.line_4.item_4.name}`
 #footer-banner
   .footer-banner-links
     .footer-banner-left
       .footer-banner-left
-        #footer-banner-tips
-        script(src='https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js')
-        script.
-          var typed = new Typed("#footer-banner-tips", {
-            strings: ["我已经准备好了足够挡雨的伞，雨却没有到来...", "彼方为谁，无我有问，九月露湿，待君之前。欢迎来到我的博客！"],
-            startDelay: 200,
-            backDelay: 2000,
-            typeSpeed: 100,
-            loop: true,
-            backSpeed: 20
-          })
+        #footer-banner-tips=`${theme.footer.text}`
 
     .footer-banner-right
       a.footer-banner-link(href="https://hexo.io/zh-cn/" title="Hexo") 框架：Hexo

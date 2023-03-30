@@ -39,11 +39,10 @@
 #nav.hide-menu #toggle-menu {
   margin-right: 20px;
 }
-.navavatar:hover {
-  content: "\f002";
-  background: #ff7c7c;
+a#site-name:hover img {
+  background: rgba(255, 255, 255, 0.767);
+  border-radius: 10px;
 }
-
 /* 标题效果 */
 #page-header #site-title {
   color: var(--title-color) !important;
@@ -311,39 +310,29 @@ a.extend.prev {
 @media screen and (min-width: 768px) {
   #pagination .page-number {
     width: 2rem;
-    background: var(--heo-card-bg);
+    background: #fff;
     height: 2rem;
     line-height: calc(2rem - 2px);
     border-radius: 8px !important;
     margin: 0 0.3rem;
-    box-shadow: var(--heo-shadow-border);
-    border: var(--style-border);
+    box-shadow: 0 0 0 1px #aaa;
     transition: 0.3s;
   }
 
   #pagination .page-number.current {
-    background: var(--heo-theme);
-    border: var(--style-border-hover);
-    box-shadow: var(--heo-shadow-theme);
-  }
-
-  #pagination .page-number.current:hover {
-    background: var(--heo-theme);
-    box-shadow: var(--heo-shadow-theme);
-    color: var(--heo-white);
+    background: #ff7c7c;
+    box-shadow: 0 0 0 1px #aaa;
   }
 
   #pagination .page-number:hover {
-    color: var(--heo-theme);
-    border: var(--style-border-hover);
-    box-shadow: var(--heo-shadow-main);
+    color: #425aef;
   }
 
 
   #pagination a.extend.next:hover, #pagination a.extend.prev:hover {
-    color: var(--heo-theme);
-    border: var(--style-border-hover);
-    box-shadow: var(--heo-shadow-main);
+    color: #ff7c7c;
+    box-shadow: 0 0 0 1px #aaa;
+    background: #fff;
   }
 
   #pagination span.space {
@@ -354,10 +343,7 @@ a.extend.prev {
     height: 2rem;
     line-height: 1.9rem;
     border-radius: 100px 50px 50px 100px!important;
-    background: var(--heo-card-bg);
-    box-shadow: var(--heo-shadow-border);
     position: absolute;
-    border: var(--style-border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,10 +355,7 @@ a.extend.prev {
     height: 2rem;
     line-height: 1.9rem;
     border-radius: 50px 100px 100px 50px!important;
-    background: var(--heo-card-bg);
-    box-shadow: var(--heo-shadow-border);
     position: absolute;
-    border: var(--style-border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1615,9 +1598,6 @@ a.categoryButton:hover {
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
   content: '输入QQ号会自动获取昵称和头像🐧'
 }
-.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {
-  content: '博主暂时未设置邮箱通知功能，请留意评论的文章书否被回复。谢谢！'
-}
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {
   content: '可以通过昵称访问您的网站🔗'
 }
@@ -1663,7 +1643,6 @@ color: #fff;
   box-shadow: 0px 0px 0px 1px #ff7c7c;
   backdrop-filter: saturate(100%) blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  max-width: 1400px;
   background: #ffffffbd !important;
 }
 .dimension-toc:hover {
@@ -1713,7 +1692,7 @@ color: #fff;
 }
 
 #nav a:hover {
-  background: var(--anzhiyu-main);
+  background: #ff7c7c;
   transition: 0.3s;
 }
 
@@ -1899,8 +1878,8 @@ ul.menus_item_child {
   color: var(--font-color);
 }
 .page #nav a:hover {
-  color: var(--anzhiyu-white) !important;
-  background: var(--anzhiyu-main);
+  color:#fff !important;
+  background: #ff7c7c;
   transition: 0.3s;
   box-shadow: var(--anzhiyu-shadow-main);
 }
@@ -2425,7 +2404,6 @@ img.footer_mini_logo:hover {
 #footer-banner .footer-banner-links {
   display: flex;
   justify-content: space-between;
-  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -2475,7 +2453,7 @@ img.footer_mini_logo:hover {
 
 #footer {
   margin: 2%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   width: 96%;
   margin-top: 0;
 }
@@ -3719,7 +3697,6 @@ button {
   position: absolute;
   right: 0;
   bottom: -40%;
-  transform: rotate(30deg);
   transition: 2s ease-in-out;
 }
 .author-content-item.game-yuanshen {
@@ -4482,104 +4459,11 @@ button {
   transform: translateY(-100%);
 }
 
-:root{
-  --heo-white: #fff;
-  --heo-black: #000;
-  --heo-none: rgba(0,0,0,0);
-  --heo-gray: #999999;
-  --heo-yellow: #ffc93e;
-  --heo-main: var(--heo-theme);
-  --heo-main-op: var(--heo-theme-op);
-  --heo-shadow-theme: 0 8px 12px -3px var(--heo-theme-op);
-  --heo-shadow-main: 0 8px 12px -3px var(--heo-main-op);
-  --heo-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234,.20);
-  --heo-shadow-white: 0 8px 12px -3px rgba(255, 255, 255,.20);
-  --heo-shadow-black: 0 0 12px 4px rgba(0, 0, 0,.05);
-  --heo-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62,.12);
-  --heo-shadow-red: 0 8px 12px -3px #ee7d7936;
-  --heo-shadow-green: 0 8px 12px -3px #87ee7936;
-  --heo-logo-color: linear-gradient(215deg,#4584ff 30%,#ff7676 70%);
-  --style-border: 1px solid var(--heo-card-border);
-  --style-border-hover: 1px solid var(--heo-theme);
-}
-
-::selection {
-  background: var(--heo-fontcolor);
-  color: var(--heo-background);
-}
-
-[data-theme=light] {
-  --heo-theme: #ff7c7c;
-  --heo-theme-op: #4259ef23;
-  --heo-blue: #ff7c7c;
-  --heo-red: #D8213C;
-  --heo-pink: #FF7C7C;
-  --heo-green: #57bd6a;
-  --heo-fontcolor: #363636;
-  --heo-background: #f7f9fe;
-  --heo-reverse: #000;
-  --heo-maskbg: rgba(255, 255, 255, 0.6);
-  --heo-maskbgdeep: rgba(255, 255, 255, 0.85);
-  --heo-hovertext: var(--heo-theme);
-  --heo-ahoverbg: #F7F7FA;
-  --heo-lighttext: var(--heo-main);
-  --heo-secondtext: rgb(87, 87, 87);
-  --heo-scrollbar: rgba(60, 60, 67, 0.4);
-  --heo-card-btn-bg: #edf0f7;
-  --heo-post-blockquote-bg: #fafcff;
-  --heo-post-tabs-bg: #f2f5f8;
-  --heo-secondbg: #edf0f7;
-  --heo-shadow-nav:0 5px 12px -5px rgba(102, 68, 68, 0.05);
-  --heo-card-bg: #fff;
-  --heo-shadow-lightblack:0 5px 12px -5px rgba(102, 68, 68, 0.00);
-  --heo-shadow-light2black:0 5px 12px -5px rgba(102, 68, 68, 0.00);
-  --heo-card-border: #e3e8f7;
-}
-
-[data-theme=dark] {
-  --heo-theme: #0084FF;
-  --heo-theme-op: #0084FF23;
-  --heo-blue: #0084FF;
-  --heo-red: #FF3842;
-  --heo-pink: #FF7C7C;
-  --heo-green: #57bd6a;
-  --heo-fontcolor: #F7F7FA;
-  --heo-background: #18171d;
-  --heo-reverse: #fff;
-  --heo-maskbg: rgba(0,0,0, 0.6);
-  --heo-maskbgdeep: rgba(0,0,0, 0.85);
-  --heo-hovertext: #0A84FF;
-  --heo-ahoverbg: #fff;
-  --heo-lighttext: #f2b94b;
-  --heo-secondtext: #a1a2b8;
-  --heo-scrollbar: rgba(200, 200, 223, 0.4);
-  --heo-card-btn-bg: #30343f;
-  --heo-post-blockquote-bg: #000;
-  --heo-post-tabs-bg: #121212;
-  --heo-secondbg: #30343f;
-  --heo-shadow-nav:0 5px 20px 0px rgba(28, 28, 28, 0.4);
-  --heo-card-bg: #1d1b26;
-  --heo-shadow-lightblack:0 5px 12px -5px rgba(102, 68, 68, 0.0);
-  --heo-shadow-light2black:0 5px 12px -5px rgba(102, 68, 68, 0.0);
-  --heo-card-border: #42444a;
-}
-
-@media screen and (max-width: 768px){
-  :root{
-    --style-border: 0px solid var(--heo-card-border);
-    --style-border-hover: 0px solid var(--heo-theme);
-  }
-}
-
 /* 颜色 */
 :root {
   --anzhiyu-theme-op: #4259ef23;
-  --anzhiyu-gray-op: #9999992b;
-  --anzhiyu-theme-top: var(--anzhiyu-theme);
   --anzhiyu-white: #fff;
-  --anzhiyu-white-op: rgba(255, 255, 255, 0.2);
   --anzhiyu-black: #000;
-  --anzhiyu-black-op: rgba(0, 0, 0, 0.2);
   --anzhiyu-none: rgba(0, 0, 0, 0);
   --anzhiyu-gray: #999999;
   --anzhiyu-yellow: #ffc93e;
@@ -4595,27 +4479,23 @@ button {
   --anzhiyu-shadow-red: 0 8px 12px -3px #ee7d7936;
   --anzhiyu-shadow-green: 0 8px 12px -3px #87ee7936;
   --anzhiyu-shadow-border: 0 8px 16px -4px #2c2d300c;
-  --anzhiyu-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
   --anzhiyu-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
   --style-border: 1px solid var(--anzhiyu-card-border);
-  --anzhiyu-blue-main: #ff7c7c;
+  --anzhiyu-blue-main: #3b70fc;
   --style-border-hover: 1px solid var(--anzhiyu-main);
   --style-border-dashed: 1px dashed var(--anzhiyu-theme-op);
   --style-border-avatar: 4px solid var(--anzhiyu-background);
   --style-border-always: 1px solid var(--anzhiyu-card-border);
-  --style-border-none: 1px solid transparent;
   --anzhiyu-white-acrylic1: #fefeff !important;
   --anzhiyu-white-acrylic2: #fcfdff !important;
   --anzhiyu-black-acrylic2: #08080a !important;
   --anzhiyu-black-acrylic1: #0b0b0e !important;
-  --anzhiyu-main-none: #b8b8b800 !important;
 }
 
 [data-theme="light"] {
-  --anzhiyu-theme: #ff7c7c;
-  --anzhiyu-theme-deep: #1856fb;
+  --anzhiyu-theme: #3b70fc;
   --anzhiyu-theme-op: #4259ef23;
-  --anzhiyu-blue: #ff7c7c;
+  --anzhiyu-blue: #3b70fc;
   --anzhiyu-red: #d8213c;
   --anzhiyu-pink: #ff7c7c;
   --anzhiyu-green: #57bd6a;
@@ -4632,18 +4512,16 @@ button {
   --anzhiyu-card-btn-bg: #edf0f7;
   --anzhiyu-post-blockquote-bg: #fafcff;
   --anzhiyu-post-tabs-bg: #f2f5f8;
-  --anzhiyu-secondbg: #f1f3f8;
+  --anzhiyu-secondbg: #edf0f7;
   --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
   --anzhiyu-card-bg: #fff;
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
-  --anzhiyu-card-border: #e3e8f7;
+  --anzhiyu-card-border: #c0c6d8;
 }
 
 [data-theme="dark"] {
-  --global-bg: #191919;
   --anzhiyu-theme: #0084ff;
-  --anzhiyu-theme-deep: #0076e5;
   --anzhiyu-theme-op: #0084ff23;
   --anzhiyu-blue: #0084ff;
   --anzhiyu-red: #ff3842;

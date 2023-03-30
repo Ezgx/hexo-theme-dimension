@@ -1,3 +1,5 @@
+//- if you see this, you may not installed hexo-renderer-pug.  pls run npm i hexo-renderer-pug --save to install.
+
 extends includes/layout.pug
 
 block content
@@ -6,7 +8,7 @@ block content
     if theme.hometop.enable
       if theme.hometop.creativities.enable
         .hometoptext3
-          .text #[=config.title]
+          .text #[=config.subtitle]
           a.randompostbtn(onclick='toRandomPost()',title='随机文章') 
             i.fas.fa-shuffle 随机文章
           .skills-style-group

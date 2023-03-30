@@ -14,10 +14,5 @@ script(async).
       document.getElementById('loading-box').classList.remove("loaded")
     }
   }
-<<<<<<< HEAD
   setTimeout(function(){preloader.endLoading();}, 3600);
-=======
-  window.addEventListener('load',()=> {preloader.endLoading()})
-  setTimeout(function(){preloader.endLoading();}, 3000);
->>>>>>> 34891de1fc2ca0a678a12b8138c44762e55d8f8c
   document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})
