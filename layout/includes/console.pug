@@ -1,6 +1,9 @@
 #console
   .close-btn(onclick='heo.hideConsole()')
     i.fas.fa-circle-xmark
+  .console-webinfo
+    .console-webinfo-card
+      include widget/card_webinfo.pug
   .button-group
     .console-btn-item 
       a.darkmode_switchbutton(onclick='toRandomPost()',title='随机文章')

@@ -36,16 +36,11 @@ html(lang=config.language class=htmlClassHideAside)
         include ./header/index.pug
         include ./console.pug
 
-        //- marcus插件
-        //- if is_home
-        //- #home_top
-        main#content-inner.layout(class=hideAside)
+        main#content-inner.layout
           if body
             div!= body
           else
             block content
-            if theme.aside.enable && page.aside !== false
-              include widget/index.pug
 
         - var footerBg = theme.footer_bg
         if (footerBg)
@@ -65,4 +60,4 @@ html(lang=config.language class=htmlClassHideAside)
     include ./rightside.pug
     !=partial('includes/third-party/search/index', {}, {cache: true})
     include ./additional-js.pug
-    span(id="fps")
+    span#fps

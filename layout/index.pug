@@ -1,5 +1,4 @@
-//- if you see this, you may not installed hexo-renderer-pug.  pls run npm i hexo-renderer-pug --save to install.
-
+//- <h1>if you see this, you may not installed hexo-renderer-pug.  pls run npm i hexo-renderer-pug --save to install.</h1>
 extends includes/layout.pug
 
 block content
@@ -8,9 +7,11 @@ block content
     if theme.hometop.enable
       if theme.hometop.creativities.enable
         .hometoptext3
+          i.fas.fa-hand.shake-hand-icon
           .text #[=config.subtitle]
           a.randompostbtn(onclick='toRandomPost()',title='随机文章') 
-            i.fas.fa-shuffle 随机文章
+            i.fas.fa-shuffle 
+            | 随机文章
           .skills-style-group
             .tags-group-all
               .tags-group-wrapper
@@ -27,16 +28,19 @@ block content
       if theme.hometop.featured_article.enable
         .hometoptext
           .text 
-            i.fas.fa-fire 站长推荐
+            i.fas.fa-star.icon
+            | 站长推荐
           include includes/hometop.pug
       if theme.hometop.show_tag_categroy.enable
         .hometoptext
           .text 
-            i.fas.fa-tags 分类标签
+            i.fas.fa-tags.icon
+            | 分类标签
           include includes/tagsBar.pug
           include includes/linksBar.pug
     .hometoptext2
       .text 
-        i.fas.fa-bookmark 全部文章
+        i.fas.fa-book.icon
+        | 全部文章
     +postUI
     include includes/pagination.pug
