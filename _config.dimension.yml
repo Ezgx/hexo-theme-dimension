@@ -8,27 +8,28 @@ menu:
     归档: /archives/ || fas fa-box-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  外站||: # fas fa-link
-    友链: /link/ || fas fa-link
-    站长推荐: /goodsites/ || fas fa-star
-    RSS: /atom.xml || fas fa-rss
-  找我||: # fab fa-github
-    留言: /comments/ || fas fa-comments
-    博主QQ: /authorqq/ || fab fa-qq
-    博主微信: /authorwechat/ || fab fa-weixin
-    QQ群: /qqgroup/ || fas fa-user-group
-    github: https://github.com/ezgx || fab fa-github
-  # 关于
-  我的||: # fas fa-address-card
-    协议: /cc/ || fab fa-creative-commons
-    主题: /2023/dimension || fas fa-wand-magic-sparkles
     关于: /about/ || fas fa-heart
-    主页: https://home.ezgx.site || fas fa-house-user
+
+  # 外站||: # fas fa-link
+    # 友链: /link/ || fas fa-link
+    # 站长推荐: /goodsites/ || fas fa-star
+    # RSS: /atom.xml || fas fa-rss
+  # 找我||: # fab fa-github
+    # 留言: /comments/ || fas fa-comments
+    # 博主QQ: /authorqq/ || fab fa-qq
+    # 博主微信: /authorwechat/ || fab fa-weixin
+    # QQ群: /qqgroup/ || fas fa-user-group
+    # github: https://github.com/ezgx || fab fa-github
+  # 关于
+  # 我的||: # fas fa-address-card
+    # 协议: /cc/ || fab fa-creative-commons
+    # 主题: /2023/dimension || fas fa-wand-magic-sparkles
+    # 主页: https://home.ezgx.site || fas fa-house-user
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme:  #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -39,18 +40,14 @@ envelope_comment:
   enable: true #开关
   cover: https://pic.imgdb.cn/item/64044228f144a01007424bbc.jpg #信笺封面图
   message: #信笺内容，支持多行
-    - 有什么想问的？
-    - 有什么想说的？
-    - 有什么想吐槽的？
-    - 哪怕是有什么想吃的，都可以告诉我哦~
-  bottom: 自动书记人偶竭诚为您服务！ #信笺结束语，只能单行
+  bottom:  #信笺结束语，只能单行
   height: #调整信笺划出高度，默认1050px
 
 post_double_row:
   enable: true
 
 # 首页板块
-hometop: 
+hometop:
   enable: true # true或false
   creativities: # 滚动图标
     enable: true
@@ -61,79 +58,23 @@ hometop:
 
 # 关于页
 about_page:
-  author: Echocbx # 作者名称
-  introduce: 是一名 学生、又菜又爱的前端爱好者、博主 # 作者简介
-  careers: 初中生 # 生涯
-  address: 中国，京海市 # 居住地
-  job: 卖鱼强 # 职业
-  job_address: 旧厂街 # 执业地点
-  birth: 2008 # 出生年
-  personalities: 辩论家 # 人格
-  say_first_line: 九月露湿 # 座右铭第一行
-  say_last_line: 待君之前 # 座右铭第二行
-  character_1: 整活大逝 # 个人特点第一行
-  character_2: 二次元指数MAX # 个人特点第二行
-  anime: 紫罗兰永恒花园 # 追番
-  music: 日语、摇滚、华语流行 #音乐偏好
+  author:  # 名称
+  introduce:  # 作者简介
+  careers:  # 生涯
+  address:  # 居住地
+  job:  # 职业
+  job_address:  # 执业地点
+  birth:  # 出生年
+  personalities:  # 人格
+  say_first_line:  # 座右铭第一行
+  say_last_line:  # 座右铭第二行
+  character_1:  # 个人特点第一行
+  character_2:  # 个人特点第二行
+  anime:  # 追番
+  music:  #音乐偏好
 
 footer:
   avatar: /img/avatar.png
-  line_1_title: 直达
-  line_1:
-    item_1:
-      link: https://home.ezgx.site
-      name: 个人主页
-    item_2:
-      link: /about/
-      name: 关于
-    item_3:
-      link: /link/
-      name: 友链
-    item_4:
-      link: javascript:toRandomPost()
-      name: 随机文章
-  line_2_title: 标签
-  line_2:
-    item_1:
-      name: 📚教程
-      link: /tags/教程/
-    item_2:
-      name: 🦋魔改教程
-      link: /categories/butterfly/
-    item_3:
-      name: 🌈捣鼓前端
-      link: /categories/前端/
-    item_4:
-      name: 📙生活记录
-      link: /categories/生活/
-  line_3_title: 我的
-  line_3:
-    item_1:
-      name: 关于
-      link: /about/
-    item_2:
-      name: 归档
-      link: /archives/
-    item_3:
-      name: 标签
-      link: /tags/
-    item_4:
-      name: 分类
-      link: /categories/
-  line_4_title: 协议
-  line_4:
-    item_1:
-      name: 版权协议
-      link: /cc/
-    item_2:
-      name: 主题协议
-      link: https://github.com/Ezgx/hexo-theme-dimension/blob/main/LICENSE
-    item_3:
-      name: 占位
-      link: javascript:void(0)
-    item_4:
-      name: 占位
-      link: javascript:void(0)
   text: 2023 ©Echocbx
 
 # copy settings
@@ -163,7 +104,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: true
+  enable: false
   preload: false
   CDN:
 
@@ -202,28 +143,28 @@ disable_top_img: false
 # The banner image of home page
 index_img: https://img02.anzhiy.cn/adminuploads/1/2023/01/30/63d7422b64891.jpg
 # If the banner of page not setting, it will show the top_img
-default_top_img: 
+default_top_img:
 
 # The banner image of archive page
-archive_img: 
+archive_img:
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: 
+tag_img:
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: 
+tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: 
+category_img:
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: 
+category_per_img:
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -235,48 +176,7 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://pic.imgdb.cn/item/64039f54f144a0100779113d.jpg
-    - https://pic.imgdb.cn/item/64039f54f144a01007791156.jpg
-    - https://pic.imgdb.cn/item/64039f55f144a0100779117b.png
-    - https://pic.imgdb.cn/item/64039f55f144a010077911cd.jpg
-    - https://pic.imgdb.cn/item/64039f55f144a010077911ee.jpg
-    # 5
-    - https://pic.imgdb.cn/item/64039fd0f144a01007796d21.png
-    - https://pic.imgdb.cn/item/64039fd0f144a01007796d4a.jpg
-    - https://pic.imgdb.cn/item/64039fd0f144a01007796d97.png
-    - https://pic.imgdb.cn/item/64039fd0f144a01007796dce.jpg
-    - https://pic.imgdb.cn/item/64039fd1f144a01007796e24.jpg
-    # 10
-    - https://pic.imgdb.cn/item/6403a054f144a0100779cd4a.jpg
-    - https://pic.imgdb.cn/item/6403a054f144a0100779cd5d.jpg
-    - https://pic.imgdb.cn/item/6403a054f144a0100779cd83.jpg
-    - https://pic.imgdb.cn/item/6403a054f144a0100779cd9f.jpg
-    - https://pic.imgdb.cn/item/6403a054f144a0100779cdd2.png
-    - https://pic.imgdb.cn/item/6403a0b0f144a010077a1889.png
-
-    # - https://wlopck.gitee.io/img/15.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/29d2fdbe0ff4140f.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/4d8bf5f62d350018.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/5d87d1eea49c7ddd.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/a0aba453bbd90d5d.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/67f52c75daaa2921.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/3b31797fe46693ad.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/fbb76f47546d5899.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/b24c742c22bc67e8.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/ea4d907f3fbf324f.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/7bffc4340863cc4a.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/f47f85b77070b3d2.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/f0ba66d0b1714e22.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/3fe27cac429733d9.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/f5452888ae734a67.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/b294b981bfbe0f5c.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/68884a3cec1bd80e.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/239f9f720eb20e6e.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/8cbb47cc6746c107.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/1fe67937e0511743.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/cf8d5afba1bb5016.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/cb01aaa6a05067bb.png
-    # - https://cdn.niux.plus/LightPicture/2023/01/63f19b064d601480.png
+    # - https://www.loliapi.com/acg/pc/
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -340,7 +240,7 @@ toc:
   style_simple: false # for post
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -348,11 +248,11 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   QR_code:
-    - img: https://ezgx.site/img/wechatpay.jpg
-      link: https://ezgx.site/img/wechatpay.jpg
-      text: 微信
+    - img: # Your QR_code
+      link: # Your QR_code link
+      text:
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -399,7 +299,7 @@ addThis:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -414,9 +314,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: 
-    - twikoo
-    - utterances
+  use:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -428,9 +326,9 @@ comments:
 # see https://artitalk.js.org/
 artitalk:
   enable: false
-  appId: LHTzZds7F6kkqMddABGhmuWD-MdYXbMMI
-  appKey: ml43vGNCUa21yE0wgEAnNt5N
-  path: 
+  appId:
+  appKey:
+  path:
   js:
   option:
   front_matter:
@@ -467,23 +365,21 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: QwAIP2LY8da07dZ0uN1LXoWm-MdYXbMMI
-  appKey: lUq1OZCVmH7C3EWGadRCjLG0
-  avatar: retro # gravatar style https://valine.js.org/#/avatar
-  serverURLs: https://valine.ezgx.site/ # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /img/yanse.jpg # valine background
+  appId:
+  appKey:
+  avatar: # gravatar style https://valine.js.org/#/avatar
+  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  bg: # valine background
   visitor: false
   option:
   enableQQ: true
-  masterS: 3387251845@qq.com
-  friendS: 
-    - 1043865083@qq.com
-    - 1172576293@qq.com
+  masterS:
+  friendS:
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.ezgx.site/ # Waline server address url
+  serverURL:  # Waline server address url
   bg: # waline background
   pageview: false
   option:
@@ -491,9 +387,9 @@ waline:
 # utterances
 # https://utteranc.es/
 utterances:
-  repo: Ezgx/utterance
-  Issue Mapping: pathname/url/title/og:title
-  issue_term: pathname
+  repo:
+  Issue Mapping:
+  issue_term:
   Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
   light_theme: dark-blue
   dark_theme: github-light
@@ -505,13 +401,13 @@ facebook_comments:
   user_id: # optional
   pageSize: 10 # The number of comments to show
   order_by: social # social/time/reverse_time
-  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+  lang: zh_CN # Language en_US/zh_CN/zh_TW and so on
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.ezgx.site/
-  region: ap-shanghai
+  envId:
+  region:
   visitor: false
   option:
 
@@ -536,7 +432,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: atalk.ezgx.site
+  server:
   site:
   visitor: false
   option:
@@ -586,7 +482,7 @@ crisp:
 messenger:
   enable: false
   pageID:
-  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+  lang: zh_CN # Language en_US/zh_CN/zh_TW and so on
 
 # Analysis
 # --------------------------------------
@@ -739,9 +635,6 @@ click_heart:
 ClickShowText:
   enable: true
   text:
-    - 欢迎来到
-    - Echocbx的
-    - 博客
   fontSize: 16px
   random: false
   mobile: true
@@ -796,19 +689,11 @@ subtitle:
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
-  sub: 
-    - 彼方为谁，无我有问，九月露湿，待君之前。
-    - 花无凋零之日，意无传递之时。
-    - 我已经准备好了足够挡雨的伞，雨却没有到来。
-    - 终是庄周梦了蝶，你是恩赐也是劫。
-    # - 愿你历经山河，觉得人间值得。
-    # - 小时候怕鬼，因为鬼狰狞恐怖，长大了怕人，因为人衣冠楚楚……
-    # - 目之所及，心之所向。
-    # - 你可以祈祷，但神不会倾听。
+  sub:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: true
+  enable: false
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -827,7 +712,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 2022/8/13
+  publish_date: # Your publish date
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -1006,7 +891,7 @@ CDN:
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: local
 
-  # Add version number to CDN, true or false  
+  # Add version number to CDN, true or false
   version: false
 
   # Custom format
@@ -1026,7 +911,7 @@ CDN:
     # gitalk:
     # gitalk_css:
     # blueimp_md5:
-    valine: /valine.js
+    # valine:
     # disqusjs:
     # disqusjs_css:
     # twikoo:
