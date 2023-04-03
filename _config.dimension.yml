@@ -75,6 +75,62 @@ about_page:
 
 footer:
   avatar: /img/avatar.png
+  line_1_title: 直达
+  line_1:
+    item_1:
+      link: https://home.ezgx.site
+      name: 个人主页
+    item_2:
+      link: /about/
+      name: 关于
+    item_3:
+      link: /link/
+      name: 友链
+    item_4:
+      link: javascript:toRandomPost()
+      name: 随机文章
+  line_2_title: 标签
+  line_2:
+    item_1:
+      name: 📚教程
+      link: /tags/教程/
+    item_2:
+      name: 🦋魔改教程
+      link: /categories/butterfly/
+    item_3:
+      name: 🌈捣鼓前端
+      link: /categories/前端/
+    item_4:
+      name: 📙生活记录
+      link: /categories/生活/
+  line_3_title: 我的
+  line_3:
+    item_1:
+      name: 关于
+      link: /about/
+    item_2:
+      name: 归档
+      link: /archives/
+    item_3:
+      name: 标签
+      link: /tags/
+    item_4:
+      name: 分类
+      link: /categories/
+  line_4_title: 协议
+  line_4:
+    item_1:
+      name: 版权协议
+      link: /cc/
+    item_2:
+      name: 主题协议
+      link: https://github.com/Ezgx/hexo-theme-dimension/blob/main/LICENSE
+    item_3:
+      name: 占位
+      link: javascript:void(0)
+    item_4:
+      name: 占位
+      link: javascript:void(0)
   text: 2023 ©Echocbx
 
 # copy settings
