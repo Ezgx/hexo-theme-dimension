@@ -66,10 +66,10 @@ hexo.extend.filter.register('before_generate', () => {
         cdnjs_name
       }
       const cdnSource = {
-        local: cond === 'internal' ? cdnjs_file : `/pluginsSrc/${name}/${file}`,
         jsdelivr: `https://cdn.jsdelivr.net/npm/${name}${verType}/${min_file}`,
         unpkg: `https://unpkg.com/${name}${verType}/${file}`,
         cdnjs: `https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}`,
+        bilicdn: `https://cdn.bilicdn.tk/npm/${name}${verType}/${min_file}`,
         custom: (CDN.custom_format || '').replace(/\$\{(.+?)\}/g, (match, $1) => value[$1])
       }
       

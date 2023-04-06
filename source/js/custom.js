@@ -698,3 +698,4 @@ var heo = {
   $('#menu-downloadimg').on('click',function(){heo.downloadImage(domImgSrc,'zhheo');});
   $('#menu-copyimg').on('click',function(){rm.writeClipImg(domImgSrc);});
   $('#menu-searchBaidu').on('click',rm.searchBaidu);
+

@@ -1,5 +1,4 @@
-/* Exc-UI */
-
+/* .dimension */
 /* fancybox图片灯箱 */
 .fancybox__backdrop {
   backdrop-filter: saturate(100%) blur(10px);
@@ -36,8 +35,40 @@
   margin-bottom: -12.5px;
   border-radius: 999px;
 }
-#nav.hide-menu #toggle-menu {
-  margin-right: 20px;
+.reddot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: red;
+  transform: translate(26px,-36px);
+  border-radius: 114514px;
+  animation: beat 1s 0.05s linear infinite;
+}
+@keyframes beat {
+  10% {
+    box-shadow: 0 0 0 2.5px red;
+  }
+  20% {
+    box-shadow: 0;
+  }
+  30% {
+    box-shadow: 0 0 0 2.5px red;
+  }
+  40% {
+    box-shadow: 0;
+  }
+  60% {
+    box-shadow: 0 0 0 2.5px red;
+  }
+  60% {
+    box-shadow: 0;
+  }
+  70% {
+    box-shadow: 0 0 0 2.tpx red;
+  }
+  80%, 100% {
+    box-shadow: 0
+  }
 }
 a#site-name:hover img {
   background: rgba(255, 255, 255, 0.767);
@@ -612,10 +643,10 @@ div.relatedPosts-list {
 #page-header {
   background: transparent !important;
 }
-#page-header.full_page {
+/* #page-header.full_page {
     height: 57vh !important;
     background-attachment: fixed !important;
-}
+}*/
 
 
 /* 鼠标 */

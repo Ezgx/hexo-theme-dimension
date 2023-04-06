@@ -8,7 +8,7 @@ menu:
     归档: /archives/ || fas fa-box-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  外站||: # fas fa-link
+  链环||: # fas fa-link
     友链: /link/ || fas fa-link
     站长推荐: /goodsites/ || fas fa-star
     RSS: /atom.xml || fas fa-rss
@@ -199,36 +199,9 @@ avatar:
 # Disable all banner image
 disable_top_img: false
 
-# The banner image of home page
-index_img: https://img02.anzhiy.cn/adminuploads/1/2023/01/30/63d7422b64891.jpg
-# If the banner of page not setting, it will show the top_img
-default_top_img: 
-
-# The banner image of archive page
-archive_img: 
-
-# If the banner of tag page not setting, it will show the top_img
-# note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: 
-
-# The banner image of tag page
-# format:
-#  - tag name: xxxxx
-tag_per_img: 
-
-# If the banner of category page not setting, it will show the top_img
-# note: category page, not categories page (子分類頁面的 top_img)
-category_img: 
-
-# The banner image of category page
-# format:
-#  - category name: xxxxx
-category_per_img: 
-
 cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
-  aside_enable: true
   archives_enable: true
   # the position of cover in home page (封面顯示的位置)
   # left/right/both
@@ -416,7 +389,7 @@ comments:
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   use: 
     - twikoo
-    - utterances
+    - waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -816,6 +789,8 @@ preloader:
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url: /css/loading.css
 
+
+
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
@@ -990,7 +965,6 @@ css_prefix: true
 inject:
   head:
   bottom:
-    # - <span id="fps"><span>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1002,16 +976,16 @@ CDN:
   internal_provider: local
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
-  # option: local/jsdelivr/unpkg/cdnjs/custom
-  # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: local
+  # option: jsdelivr/unpkg/cdnjs/custom/bilicdn
+  third_party_provider: bilicdn
+  # bilicdn为网友提供的cdn，请勿滥用！仓库地址https://github.com/biliCDN/bilicdn.github.io
 
   # Add version number to CDN, true or false  
   version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: 
 
   option:
     # main_css:

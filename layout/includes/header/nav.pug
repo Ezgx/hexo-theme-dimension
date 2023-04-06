@@ -29,12 +29,9 @@ nav#nav
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
 
-    div.nav-button.console-button
-      a.link(onclick="btf.scrollToDest(0,500)")
-        i.fas.fa-angles-up
-
-    div.nav-button.console-button
+    .nav-button.console-button(style="background: #1E3050; border-radius: 114514px;")
       a.link(onclick="heo.showConsole()")
-        i.fas.fa-gear
+        i.fa-solid.fa-plus.fa-lg(style="color: #fff;")
+      .reddot
 
     !=partial('includes/header/menu_item', {}, {cache: true})

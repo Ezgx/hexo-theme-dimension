@@ -6,9 +6,12 @@
       include widget/card_webinfo.pug
   .button-group
     .console-btn-item 
-      a.darkmode_switchbutton(onclick='toRandomPost()',title='随机文章')
+      a.darkmode_switchbutton(onclick='toRandomPost()', title='随机文章')
         i.fas.fa-shuffle(style='font-size: 1rem;')
-    #assist-open.console-btn-item(href="https://travellings.cn/go.html",title='友链接力')
-      a.assist-btn
-        i.fas.fa-bus
+    .console-btn-item
+      a.darkmode_switchbutton(href="https://travellings.cn/go.html",title='友链接力')
+        i.fas.fa-bus(style='font-size: 1rem;')
+    .console-btn-item
+      a.darkmode_switchbutton(onclick="btf.scrollToDest(0,500), heo.hideConsole()")
+        i.fas.fa-arrows-up-to-line(style='font-size: 1rem;')
   .console-mask
