@@ -69,4 +69,3 @@ function topcategoryBarScroll(){
 }, false);
   }
 }
-

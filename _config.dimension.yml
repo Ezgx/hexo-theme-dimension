@@ -1,5 +1,4 @@
-# Main menu navigation (導航目錄)
-# see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
+# theme dimension by echocbx
 # --------------------------------------
 
 menu:
@@ -633,13 +632,6 @@ theme_color:
 #   scrollbar_color: "#49b1f5"
 #   meta_theme_color_light: "ffffff"
 #   meta_theme_color_dark: "#0d0d0d"
-
-# The top_img settings of home page
-# default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
-# The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
-index_site_info_top:
-# The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
-index_top_img_height:
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)

@@ -29,9 +29,8 @@ nav#nav
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
 
-    .nav-button.console-button(style="background: #1E3050; border-radius: 114514px;")
+    .nav-button.console-button
       a.link(onclick="heo.showConsole()")
-        i.fa-solid.fa-plus.fa-lg(style="color: #fff;")
-      .reddot
+        i.fas.fa-gear
 
     !=partial('includes/header/menu_item', {}, {cache: true})
