@@ -18,7 +18,7 @@ hexo.on('ready', () => {
 ┃                                                                            ┃
 ┃                         version：${version}                                     ┃
 ┃                   by Echocbx - https://ezgx.site/                          ┃
-┃           →→★ https://github.com/ezgx/hexo-theme-dimension/               ┃
+┃           →→★ https://github.com/ezgx/hexo-theme-dimension/                ┃
 ┃                                                                            ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`);
 })
