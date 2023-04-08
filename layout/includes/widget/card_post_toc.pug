@@ -6,7 +6,6 @@
   .item-headline
     i.fas.fa-stream
     span= _p('aside.card_toc')
-    span.toc-percentage
 
   if (page.encrypt == true)
     .toc-content.toc-div-class(class=tocExpandClass style="display:none")!=toc(page.origin, {list_number: tocNumber})

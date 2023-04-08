@@ -71,3 +71,43 @@ width: 100%!important;/*容器宽度*/
 width:100%;/*控制手机自适应*/
 }
 }
+
+.firstpost-item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: #ffffffbd;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 1px #ababab;
+}
+.firstpost-item .post_cover img.post_bg, .article-sort-item-img img, .imgHover {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.firstpost-item .post_cover.left {
+  height: 300px;
+  width: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  object-fit: cover;
+}
+@media screen and (max-width:768px) {
+  .firstpost-item .post_cover.left {
+    height: 200px;
+  }
+}
+.firstpost-item .recent-post-info {
+  text-align: center;
+}
+.firstpost-item a.article-title {
+    color: #000;
+}
+#recent-posts>.firstpost-item>.recent-post-info>.article-meta-wrap {
+  color: #858585;
+}
+.firstpost-item .content {
+  display: none;
+}

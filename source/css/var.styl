@@ -1,17 +1,17 @@
 // color
 $bright-blue = #49B1F5
-$strong-cyan = #00c4b6
+$strong-cyan = #ff7a7a
 $light-orange = #FF7242
 $light-red = #F47466
 $themeColorEnable = hexo-config('theme_color') && hexo-config('theme_color.enable')
 $theme-color = $themeColorEnable && hexo-config('theme_color.main') ? convert(hexo-config('theme_color.main')) : $bright-blue
 $theme-paginator-color = $themeColorEnable && hexo-config('theme_color.paginator') ? convert(hexo-config('theme_color.paginator')) : $strong-cyan
 $theme-text-selection-color = $themeColorEnable && hexo-config('theme_color.text_selection') ? convert(hexo-config('theme_color.text_selection')) : $strong-cyan
-$theme-link-color = $themeColorEnable && hexo-config('theme_color.link_color') ? convert(hexo-config('theme_color.link_color')) : $bright-blue
+
 $theme-hr-color = $themeColorEnable && hexo-config('theme_color.hr_color') ? convert(hexo-config('theme_color.hr_color')) : $bright-blue
 $code-foreground = $themeColorEnable && hexo-config('theme_color.code_foreground') ? convert(hexo-config('theme_color.code_foreground')) : $light-red
 $code-background = $themeColorEnable && hexo-config('theme_color.code_background') ? convert(hexo-config('theme_color.code_background')) : rgba(27, 31, 35, .05)
-$theme-toc-color = $themeColorEnable && hexo-config('theme_color.toc_color') ? convert(hexo-config('theme_color.toc_color')) : $strong-cyan
+
 // font
 $dafault-font-family = -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif
 $dafault-code-font = consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif
@@ -70,8 +70,6 @@ $button-color = #fff
 $button-hover-color = $themeColorEnable && hexo-config('theme_color.button_hover') ? convert(hexo-config('theme_color.button_hover')) : $light-orange
 $button-bg = $theme-color
 $pseudo-hover = $button-hover-color
-// scrollbar
-$scrollbar-color = $themeColorEnable && hexo-config('theme_color.scrollbar_color') ? convert(hexo-config('theme_color.scrollbar_color')) : $theme-color
 // table
 $table-thead-bg = #99a9bf
 // reward
