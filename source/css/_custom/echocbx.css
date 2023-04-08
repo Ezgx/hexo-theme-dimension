@@ -3037,6 +3037,12 @@ button {
   width: 180px;
   height: 180px;
 }
+.author-content-item.map .map-title b {
+  color: #fff !important;
+}
+span.map-title {
+  color: #fff;
+}
 #about-page .author-box .author-img img {
   border-radius: 50%;
   overflow: hidden;
@@ -3363,9 +3369,6 @@ button {
   -webkit-backdrop-filter: blur(10px);
   transition: 1s ease-in-out;
   font-size: 20px;
-}
-.author-content-item.map .map-title b {
-  color: var(--font-color);
 }
 .author-content-item.selfInfo {
   display: flex;
@@ -3709,6 +3712,7 @@ button {
   min-height: 400px;
   color: var(--anzhiyu-white);
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .author-content-item .card-content .banner-button-group {
