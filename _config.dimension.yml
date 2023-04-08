@@ -76,6 +76,34 @@ about_page:
   music: 日语、摇滚、华语流行 #音乐偏好
 
 footer:
+  footer_icons:
+    enable: true
+    left:
+      - icon: fa-solid fa-compass
+        link: https://home.ezgx.site/
+        desrc: 个人主页
+        class: out
+      - icon: fa-brands fa-qq
+        link: https://res.abeim.cn/api/qq/?qq=3387251845
+        desrc: 联系QQ
+        class: out
+      - icon: fa-brands fa-weixin
+        link: /authorwechat/
+        desrc: 联系微信
+        class: in
+    right:
+      - icon: fa-brands fa-github
+        link: https://github.com/ezgx
+        desrc: Github
+        class: out
+      - icon: fa-solid fa-comment
+        link: /comments/
+        desrc: 留言
+        class: in
+      - icon: fa-solid fa-envelope
+        link: mailto:3387251845@qq.com
+        desrc: 发送邮件
+        class: out
   avatar: /img/avatar.png
   line_1_title: 直达
   line_1:

@@ -1,5 +1,27 @@
 #footer_deal
+  if theme.footer.footer_icons.enable
+      each i in theme.footer.footer_icons.left
+        if i.class == "in"
+          a.deal_link(href=`${i.link}`, title=`${i.desrc}`)
+            i(class=`${i.icon}`)
+        else if i.class == "out"
+          a.deal_link(target='_blank', rel='noopener external nofollow', href=`${i.link}`, title=`${i.desrc}`)
+            i(class=`${i.icon}`)
+        else 
+          a.deal_link(href=`${i.link}`, title=`${i.desrc}`)
+            i(class=`${i.icon}`)
   img.footer_mini_logo.entered.loading(style="border-radius:50%" src=url_for(theme.footer.avatar) onclick="btf.scrollToDest(0,500)" title="返回顶部")
+  if theme.footer.footer_icons.enable
+      each i in theme.footer.footer_icons.right 
+        if i.class == "in"
+          a.deal_link(href=`${i.link}`, title=`${i.desrc}`)
+            i(class=`${i.icon}`)
+        else if i.class == "out"
+          a.deal_link(target='_blank', rel='noopener external nofollow', href=`${i.link}`, title=`${i.desrc}`)
+            i(class=`${i.icon}`)
+        else 
+          a.deal_link(href=`${i.link}`, title=`${i.desrc}`)
+            i(class=`${i.icon}`)
 #Jay-footer
   .footer-group
     h3.footer-title=`${theme.footer.line_1_title}`

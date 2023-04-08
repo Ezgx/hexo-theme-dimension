@@ -629,32 +629,6 @@ img {
         default;
 }
 
-/* markdown-it颜色块 */
-.tips {
-    padding-left: 10px;
-    background-color: rgba(52,152,219,.3);
-    border-left: 4px solid rgb(52,152,219);
-    color: darken(rgb(52,152,219),20%);
-}
-.success {
-    padding-left: 10px;
-    background-color: rgba(46,204,113,.3);
-    border-left: 4px solid rgb(46,204,113);
-    color: darken(rgb(46,204,113),20%);
-}
-.warning {
-    padding-left: 10px;
-    background-color: rgba(241,196,15,.3);
-    border-left: 4px solid rgb(241,196,15);
-    color: darken(rgb(241,196,15),20%);
-}
-.danger {
-    padding-left: 10px;
-    background-color: rgba(231,76,60,.3);
-    border-left: 4px solid rgb(231,76,60);
-    color: darken(rgb(231,76,60),20%);
-}
-
 /* 滚动条 */
 ::-webkit-scrollbar {
     width: 8px;
