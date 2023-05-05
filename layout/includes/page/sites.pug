@@ -1,0 +1,23 @@
+#article-container
+  .flink
+    if site.data.sites
+      each i in site.data.sites
+        if i.class_name
+          .flink-name!=i.class_name
+        .flink-list
+          .btns.rounded.grid5
+            each item in i.link_list
+              a.button(href=url_for(item.link)  title=item.name target="_blank")
+                img.no-lightbox(src=url_for(item.avatar) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt=item.name )
+                #text= item.name
+        hr
+        //- .flink-list
+          each item in i.link_list
+            .flink-list-item
+              a(href=url_for(item.link)  title=item.name target="_blank")
+                .flink-item-icon
+                  img.no-lightbox(src=url_for(item.avatar) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt=item.name )
+                .flink-item-name= item.name
+                .flink-item-desc(title=item.descr)= item.descr
+
+  != page.content

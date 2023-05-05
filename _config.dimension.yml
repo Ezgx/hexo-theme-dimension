@@ -9,7 +9,7 @@ menu:
     分类: /categories/ || fas fa-folder-open
   链环||: # fas fa-link
     友链: /link/ || fas fa-link
-    站长推荐: /goodsites/ || fas fa-star
+    站长推荐: /sites/ || fas fa-star
     RSS: /atom.xml || fas fa-rss
   找我||: # fab fa-github
     留言: /comments/ || fas fa-comments
@@ -20,7 +20,7 @@ menu:
   # 关于
   我的||: # fas fa-address-card
     协议: /cc/ || fab fa-creative-commons
-    主题: /2023/dimension || fas fa-wand-magic-sparkles
+    主题: https://dimension.ezgx.site/ || fas fa-wand-magic-sparkles
     关于: /about/ || fas fa-heart
     主页: https://home.ezgx.site || fas fa-house-user
 
@@ -384,14 +384,25 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   use: 
-    # - twikoo
-    # - waline
+    - twikoo
+    - waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
   count: false # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
+
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  enable: false
+  appId: 
+  appKey: 
+  path: 
+  js:
+  option:
+  front_matter:
 
 # disqus
 # https://disqus.com/
@@ -428,7 +439,7 @@ valine:
   appId: 
   appKey: 
   avatar: retro # gravatar style https://valine.js.org/#/avatar
-  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: https://valine.ezgx.site/ # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
   visitor: false
   option:
@@ -494,7 +505,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: 
+  server: atalk.ezgx.site
   site:
   visitor: false
   option:
@@ -625,7 +636,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://pic1.58cdn.com.cn/nowater/webim/big/n_v2d2dcfdfc06214858ae7199fc1803a286.png) # url(https://img02.anzhiy.cn/adminuploads/1/2023/01/30/63d7422b64891.jpg) #rgb(247,249,254) #https://s2.loli.net/2023/01/29/BJwkUp3Fx5aLCVH.jpg
+background: url(https://pic2.imgdb.cn/item/64550c7e0d2dde57779e1233.jpg) # url(https://img02.anzhiy.cn/adminuploads/1/2023/01/30/63d7422b64891.jpg) #rgb(247,249,254) #https://s2.loli.net/2023/01/29/BJwkUp3Fx5aLCVH.jpg
 
 # Footer Background
 footer_bg: false
@@ -694,10 +705,6 @@ ClickShowText:
   random: false
   mobile: true
 
-# Default display mode (網站默認的顯示模式)
-# light (default) / dark
-display_mode: light
-
 # Beautify (美化頁面顯示)
 beautify:
   enable: false
@@ -760,11 +767,10 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
+  # 3. all
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url: /css/loading.css
-
-
 
 # busuanzi count for PV / UV in site
 # 訪問人數

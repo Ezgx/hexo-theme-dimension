@@ -1,14 +1,24 @@
 .search-dialog
   position: fixed
-  top: 10%
-  left: 50%
+  top: 0
   z-index: 1001
   display: none
-  margin-left: -300px
   padding: 20px
-  width: 600px
-  border-radius: 8px
-  background: var(--search-bg)
+  width: 100%
+  border-radius: 0px
+  background: #00000000
+  padding-bottom: 0 !important
+
+#local-search .search-dialog .local-search__hit-item:before
+  display: none
+
+#local-search .search-dialog .local-search__hit-item
+    text-align: center
+    padding: 20px
+    height 100px
+    overflow hidden
+    padding-bottom: 0 !important
+    box-shadow: 0 1px 0 0 #aaa
 
   +maxWidth768()
     top: 0

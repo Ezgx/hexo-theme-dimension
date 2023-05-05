@@ -1,14 +1,17 @@
 #article-container
-  if top_img === false
-    h1.page-title= page.title
   .flink
     if site.data.link
       each i in site.data.link
         if i.class_name
-          h2!= i.class_name
-        if i.class_desc
-          .flink-desc!=i.class_desc
+          .flink-name!=i.class_name
         .flink-list
+          .btns.rounded.grid5
+            each item in i.link_list
+              a.button(href=url_for(item.link)  title=item.name target="_blank")
+                img.no-lightbox(src=url_for(item.avatar) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt=item.name )
+                #text= item.name
+        hr
+        //- .flink-list
           each item in i.link_list
             .flink-list-item
               a(href=url_for(item.link)  title=item.name target="_blank")

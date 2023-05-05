@@ -543,27 +543,6 @@ img {
   animation-duration: 20s;
   fill: #f7f9fe;
 }
-/* 黑色模式背景 */
-[data-theme="dark"] .parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-  fill: #18171dc8;
-}
-[data-theme="dark"] .parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-  fill: #18171d80;
-}
-[data-theme="dark"] .parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-  fill: #18171d3e;
-}
-[data-theme="dark"] .parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-  fill: #18171d;
-}
 
 @keyframes move-forever {
   0% {
@@ -1160,7 +1139,7 @@ div#banners:hover {
   margin-top: 5rem;
   display: flex;
   flex-wrap: nowrap;
-  animation: rowup 10s linear infinite
+  animation: rowup 30s linear infinite
 }
 
 .nowrapMove .tags-group-wrapper {
@@ -4541,4 +4520,37 @@ span.map-title {
 ::selection {
   background: var(--heo-fontcolor);
   color: var(--heo-background);
+}
+
+#sidebar #sidebar-menus .menus_items .menus_item_child {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+#sidebar #sidebar-menus .menus_item_child li {
+  width: calc(50% - 8px);
+  margin: 4px
+}
+
+#sidebar #sidebar-menus .menus_item_child .site-page.child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #ff7a7a inset;
+  border: var(--style-border-always);
+  background: var(--heo-card-bg);
+  font-size: 14px
+}
+
+#sidebar #sidebar-menus .menus_items a.site-page, #sidebar .menus_item ul {
+  padding-left: 0
+}
+
+#sidebar #sidebar-menus.open {
+  border-radius: 12px 0 0 0;
 }
